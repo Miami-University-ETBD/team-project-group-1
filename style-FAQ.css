@@ -38,6 +38,38 @@ body {
     margin-right: 10vh;
     letter-spacing: 2px; 
   }
+  button.accordion {
+    background-color: #5F7264;
+    color:  rgb(255, 236, 230);
+    cursor: pointer;
+    padding: 18px;
+    margin: 0.75em;
+    border: 1px solid rgb(255, 236, 230);
+    border-radius:10px;
+    width: 95%;
+    margin-left:2.5em;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.5em;
+}
+  
+  .active, .accordion:hover {
+    background-color:#9F6544;
+    color:white;
+}
+  button.accordion::after {
+    content: "\002B"; 
+    font-size: 1.5em;
+    float: right;
+    margin-left: 8px;
+  }
+  
+  button.accordion.active::after {
+    content: "\2212"; 
+    color:white!important;
+  }
+
 .stripe {
     display: grid;
     grid-template-columns: [left] 20px [col1] 1fr [col7] 20px [right];

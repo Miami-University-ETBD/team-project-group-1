@@ -73,6 +73,39 @@
       </div>
   </section>
 
+  */ javascript */
+  <script>
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<script>
+    /* variables */
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+  
+    /* Toggle between adding and removing the class "active". This interacts with the CSS to highlight the button that controls the panel */
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+  
+      /* If click occurs, it also checks the status of the panel and toggles whether the panel is shown or hidden */
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+
 
 <div>
 <button onclick="topFunction()" id="top" title="Go to top">Top</button>
