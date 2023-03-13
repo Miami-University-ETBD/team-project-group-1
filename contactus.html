@@ -62,7 +62,7 @@
           <label for="related-resource">Related Resource (optional):</label>
           <input type="text1" id="related-resource" name="related-resource">
   
-          <input type="submit" value="Submit" onclick="message()">
+          <input type="submit" value="Submit">
         </form>
       </div>
 </main>
@@ -98,6 +98,8 @@
         const resource = resourceInput.value;
         const formData = { name, email, bonsaiName, description, resource };
       }
+
+      // Display HTML message
       let form = document.getElementsByTagName("form")[0]; form.addEventListener("submit", (e) => {
         e.preventDefault();
         alert("Thank you for submitting! We will review your request shortly.");
