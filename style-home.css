@@ -436,7 +436,7 @@ div.overall {
   color: #0f1f2a;
 }
 .feature_item.category1 h3 {
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/intro.jpg');
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/care.jpg');
 }
 .feature_item.category2 h3 {
   background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/intro.jpg');
