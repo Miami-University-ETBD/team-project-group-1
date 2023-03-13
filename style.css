@@ -566,7 +566,7 @@ right: 30px; /* Place the button 30px from the right */
 z-index: 99; /* Make sure it does not overlap */
 border: none; /* Remove borders */
 outline: none; /* Remove outline */
-background-color: #071015; /* Set a background color */
+background-color: #70cf84; /* Set a background color */
 color: white; /* Text color */
 cursor: pointer; /* Add a mouse pointer on hover */
 padding: 15px; /* Some padding */
@@ -575,7 +575,7 @@ font-size: 18px; /* Increase font size */
 }
 
 #top:hover {
-background-color: #0f1f2a; /* Add a dark-grey background on hover */
+background-color: #505050; /* Add a dark-grey background on hover */
 }
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media only screen and (min-width: 880px) {
