@@ -1,0 +1,125 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Us</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="manifest" href="site.webmanifest">
+  <link href='https://fonts.googleapis.com/css?family=Rozha One' rel='stylesheet'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style-contactus.css">
+  <script src="java.js" defer ></script>
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <nav class="stripe menubar">
+      <div class="content_container">
+        <ul>
+          <li style="float: left;"><img class="logo" src="images/logo.png"><span><a class="logo" href="index.html">Bonsai</a></span></li>
+          <li><a href="information.html">INFORMATION</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="contactus.html">CONTACT US</a></li>
+          <li></li>
+          <li></li>
+          <li>
+            <input type="text" placeholder="Search..">
+          </li>
+        </ul>
+      </div>
+</nav>
+
+  <div class="stripe introduction">
+    <div class="content_container">
+    <h1><b>Contact Us</b></h1><br>
+    <h2>Fill the form to add a new bonsai tree to our website</h2>
+  </div>
+  </div>
+
+<main>
+    <div class="form-container";>
+        <h1>Submission Form</h1>
+        <form onsubmit="showThankYouMessage(); return false;">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="new-tree-name">New Bonsai Tree Name:</label>
+          <input type="text" id="new-tree-name" name="new-tree-name" required>
+  
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea>
+  
+          <label for="related-resource">Related Resource (optional):</label>
+          <input type="text" id="related-resource" name="related-resource">
+  
+          <input type="submit" value="Submit">
+        </form>
+  
+        <div class="thank-you-message"; style="margin: 10em 10em 10em 10em";>
+          Thank you for submitting the form!
+        </div>
+      </div>
+</main>
+
+  <button onclick="topFunction()" id="top" title="Go to top">Top</button>
+  <footer class="footer">
+    <div class="footer1">
+      <p class="logoend" href="home.html"><a>Bonsai</a></p>
+      <img class="logoend" src="images/logo.png">
+    </div>
+    <div class="footer2">
+      <p class="footer2">
+        Written by Kaia Nguyen, Khanh Mai, Ngoc Uong and Rachel Farvel. <br>
+        At Miami University, Oxford, Ohio, USA. <br> 
+        &copy; The Meaning of Flowers, 2023
+      </p>
+    </div>
+  </footer>
+
+<script>
+    function showThankYouMessage() {
+        document.querySelector(".form-container").style.display = "none";
+        document.querySelector(".thank-you-message").style.display = "block";
+    }
+        function handleSubmit(event) {
+        event.preventDefault();
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const bonsaiNameInput = document.getElementById('bonsai-name');
+        const descriptionInput = document.getElementById('description');
+        const resourceInput = document.getElementById('resource');
+        const name = nameInput.value;
+        const email = emailInput.value;
+        const bonsaiName = bonsaiNameInput.value;
+        const description = descriptionInput.value;
+        const resource = resourceInput.value;
+        const formData = { name, email, bonsaiName, description, resource };
+        console.log(formData);
+        document.getElementById('form').style.display = 'none';
+        document.getElementById('thank-you').style.display = 'block';
+      }
+  </script>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
