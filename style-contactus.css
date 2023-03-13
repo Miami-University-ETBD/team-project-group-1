@@ -194,7 +194,7 @@ html {
     text-transform: uppercase;
     font-size: 16px;
   }
-  /*======================menubar========================*/
+  /*======================herobanner========================*/
   .stripe {
     display: grid;
     grid-template-columns: [left] 20px [col1] 1fr [col7] 20px [right];
