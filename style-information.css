@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
+	margin: 0px;
 }
 
 .container {
@@ -60,7 +61,6 @@ body {
 	color: #ffffff;
 	vertical-align: middle;
   }
-
 
   .content_container input[type=text] {
 	float: right;
