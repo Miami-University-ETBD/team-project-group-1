@@ -516,6 +516,7 @@ html {
 h1 {
     text-align: center;
     margin-top: 0;
+    font-family: 'Lato', sans-serif;
 }
 form {
     display: flex;
@@ -536,7 +537,7 @@ input[type="text"], input[type="email"], textarea {
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     resize: none;
     min-height: 40px;
-    font-family: inherit;
+    font-family: 'Lato', sans-serif;
 }
 input[type="submit"] {
     background-color: #4CAF50;
