@@ -96,9 +96,6 @@
         const description = descriptionInput.value;
         const resource = resourceInput.value;
         const formData = { name, email, bonsaiName, description, resource };
-        console.log(formData);
-        document.getElementById('form').style.display = 'none';
-        document.getElementById('message').style.display = 'block';
       }
       let form = document.getElementsByTagName("form")[0]; form.addEventListener("submit", (e) => {
         e.preventDefault();
