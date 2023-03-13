@@ -153,37 +153,6 @@ body {
 	margin-bottom: 100px;
   }
 
-  div.overall {
-	display: block; 
-	background-color: #70CF84;
-	padding-top: 10vh;
-	padding-bottom: 10vh; 
-	padding-left: 10vw;
-	padding-right: 10vw;
-	height: auto;
-	border-radius: 8px; 
-  }
-  .stripe.introduction h1 {
-	font-family: 'Rozha One',serif;
-	text-align: center;
-	font-size: 4.5em;
-	font-weight: 100;
-	color: #323232;
-	margin-top: 25vh;
-	margin-bottom: 0vh;
-	margin-left: auto;
-	margin-right: auto;
-	letter-spacing: 5px; 
-  }
-  .stripe.message {
-	text-align: center;
-	margin-top: 5vh;
-  	margin-bottom: 0px;
-  	margin-left: 10vw;
-  	margin-right: 10vw;
-  	padding: 0px;
-  	font-size: 16px;
-  }
   .stripe.resource {
 	text-align: center;
 	margin-top: 5vh;
