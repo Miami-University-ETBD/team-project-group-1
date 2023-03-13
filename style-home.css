@@ -363,7 +363,7 @@ div.overall {
   font-size: 20px;
   color: #0f1f2a;
   margin-top: 4vh;
-  margin-bottom: 4vh;
+  margin-bottom: 0vh;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 2px; 
@@ -378,7 +378,7 @@ div.overall {
 }
 .stripe.features h2 {
   margin-top: 0px;
-    margin-bottom: 0px; 
+    margin-bottom: 4vh; 
     text-align: center;
     font-size: 2.25em;
     color: #323232; 
