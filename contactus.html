@@ -65,9 +65,9 @@
           <input type="submit" value="Submit" onclick="message()">
         </form>
   
-        <div class="message" id="message">
+        <!-- <div class="message" id="message">
           Thank you for submitting the form!
-        </div>
+        </div> -->
 
       </div>
 </main>
@@ -88,10 +88,10 @@
   </footer>
 
 <script>
-    function showThankYouMessage() {
-        document.querySelector(".form-container").style.display = "none";
-        document.querySelector(".message").style.display = "block";
-    }
+    // function showThankYouMessage() {
+    //     document.querySelector(".form-container").style.display = "none";
+    //     document.querySelector(".message").style.display = "block";
+    // }
         function handleSubmit(event) {
         event.preventDefault();
         const nameInput = document.getElementById('name');
@@ -109,6 +109,10 @@
         document.getElementById('form').style.display = 'none';
         document.getElementById('message').style.display = 'block';
       }
+      let form = document.getElementsByTagName("form")[0]; form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Form Submitted!");
+      });
   </script>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
