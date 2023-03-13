@@ -23,7 +23,7 @@
   <nav class="stripe menubar">
       <div class="content_container">
         <ul>
-          <li style="float: left;"><img class="logo" src="images/logo.png"><span><a class="logo" href="index.html">Bonsai</a></span></li>
+          <li style="float: left;"><img class="logo" src="images/logo.png"><span><a class="logo" href="home.html">Bonsai</a></span></li>
           <li><a href="information.html">INFORMATION</a></li>
           <li><a href="FAQ.html">FAQ</a></li>
           <li><a href="contactus.html">CONTACT US</a></li>
@@ -62,12 +62,13 @@
           <label for="related-resource">Related Resource (optional):</label>
           <input type="text" id="related-resource" name="related-resource">
   
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" onclick="message()">
         </form>
   
-        <div class="thank-you-message"; style="margin: 10em 10em 10em 10em";>
+        <div class="message" id="message">
           Thank you for submitting the form!
         </div>
+
       </div>
 </main>
 
@@ -106,7 +107,7 @@
         const formData = { name, email, bonsaiName, description, resource };
         console.log(formData);
         document.getElementById('form').style.display = 'none';
-        document.getElementById('thank-you').style.display = 'block';
+        document.getElementById('message').style.display = 'block';
       }
   </script>
 
