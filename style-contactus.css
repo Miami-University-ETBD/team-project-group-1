@@ -568,6 +568,10 @@ input[type="submit"]:hover {
     margin-top: 5px;
 }
 
+div.form-container {
+    margin: 6em 10em 10em 10em;
+}
+
 /* Style for the thank you message */
 .thank-you-message {
     display: none;
