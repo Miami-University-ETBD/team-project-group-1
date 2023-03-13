@@ -245,7 +245,7 @@ button.learnmore a {
   letter-spacing: 1px; 
   padding: 50px 20px;
 }
-button.overall {
+button.information {
   display: block;
   margin: auto;
   margin-top: 5vh;
@@ -256,7 +256,7 @@ button.overall {
   border: 0px; 
   border-radius: 8px; 
 }
-button.overall a {
+button.information a {
   text-decoration: none; 
   color: #323232;
   text-transform: uppercase;
