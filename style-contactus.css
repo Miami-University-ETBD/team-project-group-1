@@ -543,7 +543,7 @@ input[type="submit"] {
     color: white;
     border: none;
     border-radius: 3px;
-    padding: 10px;
+    padding: 15px;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -572,14 +572,3 @@ div.form-container {
     margin: 6em 10em 10em 10em;
 }
 
-/* Style for the thank you message */
-.message {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    font-size: 24px;
-    color: #4CAF50;
-    margin-bottom:  60px;
-    animation: button .3s linear;
-    display: none;
-  }
