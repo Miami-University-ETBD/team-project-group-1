@@ -377,8 +377,12 @@ div.overall {
   font-family: 'Rozha One',serif; 
 }
 .stripe.features h2 {
-  text-align: center;
-  font-size: 5rem;
+  margin-top: 0px;
+    margin-bottom: 0px; 
+    text-align: center;
+    font-size: 2.25em;
+    color: #323232; 
+    font-family: 'Rozha One',serif; 
 }
 .stripe.contents h2 {
   text-align: center;
