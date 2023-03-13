@@ -1,0 +1,264 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  section.button-containter {
+    margin-top: 10vh;
+    margin-bottom: 10vh; 
+  }
+  h1 {
+    font-family: 'Rozha One',serif;
+    text-align: center;
+    font-size: 4.5em;
+    font-weight: 100;
+    color: #323232;
+    margin-top: 25vh;
+    margin-bottom: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 5px; 
+  }
+  h2{
+    text-align: center;
+    font-size: 20px;
+    color: #0f1f2a;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    letter-spacing: 2px; 
+  }
+  h3{
+    text-align: center;
+    font-size: 20px;
+    color: #0f1f2a;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    letter-spacing: 2px; 
+  }
+  button.accordion {
+    background-color: #5F7264;
+    color:  rgb(255, 236, 230);
+    cursor: pointer;
+    padding: 18px;
+    margin: 0.75em;
+    border: 1px solid rgb(255, 236, 230);
+    border-radius:10px;
+    width: 95%;
+    margin-left:2.5em;
+    margin-top: 3em;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.5em;
+}
+  
+  .active, .accordion:hover {
+    background-color:#9F6544;
+    color:white;
+}
+  button.accordion::after {
+    content: "\002B"; 
+    font-size: 1.5em;
+    float: right;
+    margin-left: 8px;
+  }
+  
+  button.accordion.active::after {
+    content: "\2212"; 
+    color:white!important;
+  }
+
+.stripe {
+    display: grid;
+    grid-template-columns: [left] 20px [col1] 1fr [col7] 20px [right];
+  }
+  .content_container {
+    grid-column-start: col1;
+    grid-column-end: col7;
+  }
+  /*======================menubar========================*/
+.menubar {
+    background-color: #ffffff;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+    box-shadow: 0px 12px 24px rgb(0 0 0 / 10%);
+  }
+  .menubar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menubar ul li {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+  }
+  .menubar a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 10px;
+    color: #505050 !important;
+    vertical-align: middle;
+  }
+  .menubar a:hover {
+    background-color: grey;
+  }
+  img.logo {
+    width: 50px;
+    height: fit-content;
+  
+  }
+  a.logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 10px;
+    color: #ffffff;
+    vertical-align: middle;
+  }
+  .content_container input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 0px;
+    margin-right: 0px;
+    border-bottom: 1px solid #505050;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px; 
+    font-size: 17px;
+  }
+  ::placeholder {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  /*======================menubar========================*/
+  /*======================footer========================*/
+  div.footer1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.footer2 {
+    margin-top: 10px;
+    margin-left: 30vw;
+    margin-right: 30vw;
+  }
+  p.footer1 {
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+  p.footer2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+  }
+  img.logoend {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+  p.logoend {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #ffffff;
+    vertical-align: middle;
+  }
+  /*======================footer========================*/
+  #top {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #70cf84; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    }
+    
+    #top:hover {
+    background-color: #505050; /* Add a dark-grey background on hover */
+    }
+
+  @media only screen and (min-width: 880px) {
+    .stripe {
+      grid-template-columns: [left] 100px [col1] 1fr [col7] 100px [right];
+    }
+    .content_container.page_grid {
+      display: grid;
+      grid-template-columns: [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6];
+      grid-gap: 40px;
+    }
+    .footer {
+      padding-top: 40px;
+      padding-bottom: 20px;
+      background-color: #000000;
+      display: grid;
+      grid-template-columns: [col1] 1fr [col7];
+      grid-gap: 0px;
+    }
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .flex-item-left {
+      padding: 0px;
+      flex: 50%;
+      margin-left: 5vw;
+    }
+    
+    .flex-item-right {
+      padding: 0px;
+      flex: 50%;
+      margin-right: 5vw;
+    }
+  }
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex-direction: column;
+      margin: 0px;
+    }
+    .content_container input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    
+    .content_container input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }

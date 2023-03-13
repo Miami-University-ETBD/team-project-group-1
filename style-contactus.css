@@ -16,34 +16,6 @@ html {
   }
   
   /*
-   * A better looking default horizontal rule
-   */
-  
-  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-  }
-  
-  /*
-   * Remove the gap between audio, canvas, iframes,
-   * images, videos and the bottom of their containers:
-   * https://github.com/h5bp/html5-boilerplate/issues/440
-   */
-  
-  audio,
-  canvas,
-  iframe,
-  img,
-  svg,
-  video {
-    vertical-align: middle;
-  }
-  
-  /*
    * Remove default fieldset styles.
    */
   
@@ -260,7 +232,7 @@ html {
     letter-spacing: 2px; 
   }
 
-    /*======================footer========================*/
+/*======================footer========================*/
     div.footer1 {
       margin-left: auto;
       margin-right: auto;
@@ -300,12 +272,12 @@ html {
       color: #ffffff;
       vertical-align: middle;
     }
-    /*======================footer========================*/
+
+/*======================footer========================*/
   .content_container {
     grid-column-start: col1;
     grid-column-end: col7;
   }
-  /* copy all of these page_grid too!*/
   .content_container.page_grid {
     display: grid;
     grid-gap: 20px 0px;
@@ -368,6 +340,7 @@ html {
   #top:hover {
   background-color: #505050; /* Add a dark-grey background on hover */
   }
+
   /* Responsive layout - makes a one column-layout instead of a two-column layout */
   @media only screen and (min-width: 880px) {
     .stripe {
@@ -503,7 +476,7 @@ html {
     }
   }
 
-   /* Form */
+/*======================Form========================*/
 .container {
     background-color: #ffffff;
     padding: 20px;
@@ -516,6 +489,7 @@ html {
 h1 {
     text-align: center;
     margin-top: 0;
+    font-family: 'Lato', sans-serif;
 }
 form {
     display: flex;
@@ -525,7 +499,7 @@ label {
     margin-top: 10px;
     font-weight: bold;
 }
-input[type="text"], input[type="email"], textarea {
+input[type="text1"], input[type="email"], textarea {
     border: none;
     border-radius: 3px;
     padding: 10px;
@@ -536,14 +510,14 @@ input[type="text"], input[type="email"], textarea {
     box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
     resize: none;
     min-height: 40px;
-    font-family: inherit;
+    font-family: 'Lato', sans-serif;
 }
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 3px;
-    padding: 10px;
+    padding: 15px;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -572,10 +546,3 @@ div.form-container {
     margin: 6em 10em 10em 10em;
 }
 
-/* Style for the thank you message */
-.thank-you-message {
-    display: none;
-    text-align: center;
-    font-size: 24px;
-    color: #4CAF50;
-  }

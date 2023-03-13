@@ -245,7 +245,7 @@ button.learnmore a {
   letter-spacing: 1px; 
   padding: 50px 20px;
 }
-button.overall {
+button.information {
   display: block;
   margin: auto;
   margin-top: 5vh;
@@ -256,7 +256,7 @@ button.overall {
   border: 0px; 
   border-radius: 8px; 
 }
-button.overall a {
+button.information a {
   text-decoration: none; 
   color: #323232;
   text-transform: uppercase;
@@ -422,6 +422,11 @@ div.overall {
   background-size: cover;
   text-align: center;
   margin: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px; 
+  font-weight: 600; 
+  letter-spacing: 1px; 
 }
 .feature_item button {
   width: 100%;
@@ -436,16 +441,16 @@ div.overall {
   color: #0f1f2a;
 }
 .feature_item.category1 h3 {
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/intro.jpg');
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/care.jpg');
 }
 .feature_item.category2 h3 {
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/intro.jpg');
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/grow.jpg');
 }
 .feature_item.category3 h3 {
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/intro.jpg');
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/style.jpg');
 }
 .feature_item.category4 h3 {
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/intro.jpg');
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/species.jpg');
 }
   /*======================footer========================*/
   div.footer1 {
