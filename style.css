@@ -436,38 +436,16 @@ div.overall {
   color: #0f1f2a;
 }
 .feature_item.category1 h3 {
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/Alphabet.jpg');
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/intro.jpg');
 }
 .feature_item.category2 h3 {
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/Color.jpg');
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/intro.jpg');
 }
 .feature_item.category3 h3 {
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/Month.jpg');
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/intro.jpg');
 }
-img.about {
-  display: block;
-  margin-left: 0vw;
-  margin-right: auto;
-  height: auto;
-  width: 30vw;
-  box-shadow: 5vw 5vw #dddddd;
-}
-p.about {
-  margin-top: 10vh;
-  margin-bottom: 0px;
-  margin-left: 5vw;
-  margin-right: 0vw;
-  padding: 0px;
-  font-size: 16px;
-  line-height: 200%;
-}
-img.history {
-  display: block;
-  margin-left: 5vw;
-  margin-right: auto;
-  height: auto;
-  width: 30vw;
-  box-shadow: 5vw 5vw #dddddd;
+.feature_item.category1 h4 {
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/intro.jpg');
 }
   /*======================footer========================*/
   div.footer1 {
