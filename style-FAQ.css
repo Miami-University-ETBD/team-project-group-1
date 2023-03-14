@@ -7,8 +7,8 @@ body {
     margin-right: 0 !important;
   }
   section.button-containter {
-    margin-top: 10vh;
-    margin-bottom: 10vh; 
+    margin-top: 20vh;
+    margin-bottom: 20vh; 
   }
   h1 {
     font-family: 'Rozha One',serif;
@@ -73,6 +73,11 @@ body {
   button.accordion.active::after {
     content: "\2212"; 
     color:white!important;
+  }
+  p{
+      margin-left:2.5em;
+      text-align: left;
+      font-size: 1.5em;
   }
 
 .stripe {
