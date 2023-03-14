@@ -43,12 +43,12 @@ body {
     letter-spacing: 2px; 
   }
   button.accordion {
-    background-color: #5F7264;
-    color:  rgb(255, 236, 230);
+    background-color: #70cf84;
+    color:  #ffffff;
     cursor: pointer;
     padding: 18px;
     margin: 0.75em;
-    border: 1px solid rgb(255, 236, 230);
+    border: 0px;
     border-radius:10px;
     width: 95%;
     margin-left:2.5em;
@@ -60,7 +60,7 @@ body {
 }
   
   .active, .accordion:hover {
-    background-color:#9F6544;
+    background-color:#505050;
     color:white;
 }
   button.accordion::after {
