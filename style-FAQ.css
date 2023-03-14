@@ -93,6 +93,14 @@ body {
     background-color:#505050;
     color:white;
 }
+
+.panel {
+  padding: 30px 18px;
+  background-color: #fff;
+  display: none;
+  overflow: hidden;
+}
+
   button.accordion::after {
     content: "\002B"; 
     font-size: 1.5em;
