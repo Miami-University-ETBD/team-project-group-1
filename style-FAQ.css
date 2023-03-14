@@ -44,11 +44,11 @@ body {
   }
   button.accordion {
     background-color: #70cf84;
-    color:  rgb(255, 236, 230);
+    color:  #ffffff;
     cursor: pointer;
     padding: 18px;
     margin: 0.75em;
-    border: 1px solid rgb(255, 236, 230);
+    border: 0px;
     border-radius:10px;
     width: 95%;
     margin-left:2.5em;
