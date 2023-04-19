@@ -17,6 +17,121 @@
   <link rel="stylesheet" href="style-calculator.css">
   <script src="java.js" defer ></script>
   <meta name="theme-color" content="#fafafa">
+  <script>
+    function getValues()
+{
+	//input
+	//button click gets values from inputs
+	var loan_amount = parseFloat(document.getElementById("amount").value);
+	var terms = parseInt(document.getElementById("terms").value);
+	var interest_rate  = 
+		parseFloat(document.getElementById("interest").value/100.0);
+	
+		//set the div string
+	var div = document.getElementById("Result");
+	
+	//in case of a re-calc, clear out the div!
+	div.innerHTML = "";
+	
+	//validate inputs - display error if invalid, otherwise, display table
+	var balVal = validateInputs(loan_amount);
+	var intrVal = validateInputs(interest_rate );
+
+	if (balVal && intrVal)
+	{
+		//Returns div string if inputs are valid
+		div.innerHTML += amort(loan_amount, interest_rate , terms);
+	}
+	else
+	{
+		//returns error if inputs are invalid
+		div.innerHTML += "Please Check your inputs and retry - invalid values.";
+	}
+}
+//process
+/**
+ * Amort function:
+ * Calculates the necessary elements of the loan using the supplied user input
+ * and then displays each months updated amortization schedule on the page
+*/
+function amort(loan_amount, interest_rate , terms)
+{
+    //Calculate the per month interest rate
+	var monthly_rate = interest_rate /12;
+	
+	//Calculate the monthy payment
+    var monthly_payment = loan_amount * (monthly_rate/(1-Math.pow(1+monthly_rate, -terms)));
+
+	//Calculate the total paid
+    var total_paid = monthly_payment * terms;
+	    
+	//output
+		//begin building the return string for the display of the amort table
+    var result = "Loan Amount: $" + loan_amount.toFixed(2) +  "<br />" + 
+        "Interest Rate: " + interest_rate.toFixed(2) +  "%<br />" +
+        "Number of Months: " + terms + "<br />" +
+        "Monthly Payment: $" + monthly_payment.toFixed(2) + "<br />" +
+        "Total Paid: $" + total_paid.toFixed(2) + "<br /><br />";
+        
+    //add header row for table to return string
+	result += "<table border='1'><tr><th>Month #</th><th>Balance</th>" + 
+        "<th>Interest</th><th>Principal</th>";
+    
+    /**
+     * Loop that calculates the monthly Loan amortization amounts then adds 
+     * them to the return string 
+     */
+	for (var count = 0; count < terms; ++count)
+	{ 
+		//in-loop interest amount holder
+		var interest_paid_each_month = loan_amount * monthly_rate;
+		
+		//in-loop monthly principal amount holder
+		var principal_paid_each_month = monthly_payment - interest_paid_each_month;
+		
+		//start a new table row on each loop iteration
+		result += "<tr align=center>";
+		
+		//display the month number in col 1 using the loop count variable
+		result += "<td>" + (count + 1) + "</td>";
+		
+		//update the balance for each loop iteration	
+		//code for displaying in loop loan_amount
+		loan_amount = loan_amount - principal_paid_each_month;
+		result += "<td> $" + loan_amount.toFixed(2) + "</td>";
+		
+		//calc the in-loop interest amount and display
+		result += "<td> $" + interest_paid_each_month.toFixed(2) + "</td>";
+		
+		//calc the in-loop monthly principal and display
+		result += "<td> $" + principal_paid_each_month.toFixed(2) + "</td>";
+		
+		//end the table row on each iteration of the loop	
+		result += "</tr>";
+			
+	}
+	
+	//Final piece added to return string before returning it - closes the table
+    result += "</table>";
+	
+	//returns the concatenated string to the page
+    return result;
+}
+
+function validateInputs(value)
+{
+	//some code here to validate inputs
+	if ((value == null) || (value == ""))
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+document.write("<table><tr><th>Month</th><th>Balance</th><th>Interest</th><th>Principle</th></tr><tr><td>" + month + "</td><td>" + loan_amount + "</td><td>" + interest_paid_each_month + "</td><td>" + principal_paid_each_month + "</td></tr></table>");    
+   </script>
 </head>
 
 <body>
@@ -50,23 +165,32 @@
     <div class="form-container";>
         <h3>Appreciate the age of the tree. Please select the tree type and specify the stem circumference / diameter in cm or inch. The stem circumference is measured at a height of 1.00 m (3.3 ft.) to 1.50 m (4.5 ft.).</h1>
         <form>
-          <label for="name">Name:</label>
-          <input type="text1" id="name" name="name" required>
-  
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-  
-          <label for="new-tree-name">New Bonsai Tree Name:</label>
-          <input type="text1" id="new-tree-name" name="new-tree-name" required>
-  
-          <label for="description">Description:</label>
-          <textarea id="description" name="description" required></textarea>
-  
-          <label for="related-resource">Related Resource (optional):</label>
-          <input type="text1" id="related-resource" name="related-resource">
-          
-          <!-- submit button -->
-          <input type="submit" value="Submit">
+          <fieldset>
+            <legend>Inputs</legend>
+            <label for="amount"><b>Mortage amount</b></label>
+            <input type="text" id="amount" />
+            <br />
+            <label for="terms"><b>Terms in months</b></label>
+            <select id="terms">
+              <option value="12">12 Months</option>
+              <option value="24">24 Months</option>
+              <option value="36">36 Months</option>
+              <option value="48">48 Months</option>
+              <option value="60">60 Months</option>
+              <option value="72">72 Months</option>
+            </select>
+            <br />
+            <label for="interest"><b>Interest rate per year</b></label>
+            <input type="text" id="interest" />
+            <br />
+            <input type="button" value="Calculate" onclick="getValues()" />								
+          </fieldset>
+        </form>
+        <form>
+          <fieldset>
+          <legend>Outputs</legend>
+            <div id="Result"></div>
+          </fieldset>						
         </form>
       </div>
 </main>
