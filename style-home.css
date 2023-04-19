@@ -558,7 +558,12 @@ background-color: #505050; /* Add a dark-grey background on hover */
   .stripe {
     grid-template-columns: [left] 100px [col1] 1fr [col7] 100px [right];
   }
-  .content_container.page_grid {
+  .content_container.page_grid.features {
+    display: grid;
+    grid-template-columns: [col1] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [col7];
+    grid-gap: 40px;
+  }
+  .content_container.page_grid.contents {
     display: grid;
     grid-template-columns: [col1] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [col7];
     grid-gap: 40px;
