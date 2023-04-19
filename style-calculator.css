@@ -298,7 +298,7 @@ input[type="text1"], input[type="email"], textarea {
   min-height: 40px;
   font-family: 'Lato', sans-serif;
 }
-input[type="submit"] {
+input[type="button"] {
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -310,7 +310,7 @@ input[type="submit"] {
   box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
   margin-top: 15px;
 }
-input[type="submit"]:hover {
+input[type="button"]:hover {
   background-color: #3e8e41;
 }
 .required:after {
