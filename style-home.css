@@ -467,6 +467,26 @@ p.content {
   font-size: 1.125em;
   color: #222222;
 }
+button.content_information {
+  display: block;
+  margin: auto;
+  margin-top: 5vh;
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+  background-color: #70CF84;
+  background-repeat: no-repeat;
+  border: 0px; 
+  border-radius: 8px; 
+}
+button.content_information a {
+  text-decoration: none; 
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1em;  
+  font-weight: 600; 
+  letter-spacing: 1px; 
+  padding: 50px 20px;
+}
   /*======================footer========================*/
   div.footer1 {
     margin-left: auto;
