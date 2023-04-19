@@ -452,7 +452,7 @@ div.content_item {
 }
 .content_item h3 {
   text-align: center;
-  margin: 0px;
+  margin-bottom: 10px;
   color: #323232;
   font-family: 'Rozha One',serif;
   font-size: 1.5em; 
