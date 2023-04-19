@@ -299,13 +299,6 @@ p.overallblockquote {
   font-style: italic;
   color: #ffffff;
 }
-p.content1 {
-  margin-top: 0vh;
-  margin-bottom: 0vh;
-  padding-top: 20px;
-  font-size: 1.125em;
-  color: #222222;
-}
 .stripe {
   display: grid;
   grid-template-columns: [left] 20px [col1] 1fr [col7] 20px [right];
@@ -448,13 +441,20 @@ div.overall {
 }
 div.content_item {
   display: block; 
-  background-color: #70CF84;
+  background-color: #ffffff;
   padding-top: 10vh;
   padding-bottom: 10vh; 
   padding-left: 10vw;
   padding-right: 10vw;
   height: auto;
   border-radius: 8px; 
+}
+p.content {
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  padding-top: 20px;
+  font-size: 1.125em;
+  color: #222222;
 }
   /*======================footer========================*/
   div.footer1 {
