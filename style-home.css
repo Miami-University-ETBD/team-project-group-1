@@ -299,6 +299,13 @@ p.overallblockquote {
   font-style: italic;
   color: #ffffff;
 }
+p.content1 {
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  padding-top: 20px;
+  font-size: 1.125em;
+  color: #222222;
+}
 .stripe {
   display: grid;
   grid-template-columns: [left] 20px [col1] 1fr [col7] 20px [right];
@@ -368,25 +375,11 @@ div.overall {
 }
 .stripe.features h2 {
   margin-top: 0px;
-    margin-bottom: 4vh; 
-    text-align: center;
-    font-size: 2.25em;
-    color: #323232; 
-    font-family: 'Rozha One',serif; 
-}
-.stripe.contents h2 {
+  margin-bottom: 4vh; 
   text-align: center;
-  font-size: 5rem;
-  color: #323232;
-  margin-top: 0px;
-  margin-bottom: 40px;
-}
-.stripe.calculator h2 {
-  text-align: center;
-  font-size: 5rem;
-  color: #323232;
-  margin-top: 0px;
-  margin-bottom: 40px;
+  font-size: 2.25em;
+  color: #323232; 
+  font-family: 'Rozha One',serif; 
 }
 .feature.introduction h1 {
   text-align: center;
