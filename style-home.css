@@ -461,6 +461,7 @@ div.content_item {
   letter-spacing: 1px; 
 }
 p.content {
+  text-align: center;
   margin-top: 0vh;
   margin-bottom: 0vh;
   padding-top: 20px;
