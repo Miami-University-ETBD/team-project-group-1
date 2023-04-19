@@ -459,6 +459,12 @@ div.content_item {
   font-weight: 300; 
   letter-spacing: 1px; 
 }
+hr {
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color:gray
+}
 p.content {
   text-align: center;
   margin-top: 0vh;
