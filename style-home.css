@@ -460,10 +460,11 @@ div.content_item {
   letter-spacing: 1px; 
 }
 hr {
-  height:2px;
-  border-width:0;
-  color:gray;
-  background-color:gray
+  height: 2px;
+  width: 50%;
+  border-width: 0;
+  color: gray;
+  background-color: gray;
 }
 p.content {
   text-align: center;
