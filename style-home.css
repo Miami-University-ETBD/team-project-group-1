@@ -445,6 +445,16 @@ div.overall {
 .feature_item.category5 h3 {
   background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/beginner.jpg');
 }
+div.content_item {
+  display: block; 
+  background-color: #70CF84;
+  padding-top: 10vh;
+  padding-bottom: 10vh; 
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: auto;
+  border-radius: 8px; 
+}
   /*======================footer========================*/
   div.footer1 {
     margin-left: auto;
@@ -565,7 +575,7 @@ background-color: #505050; /* Add a dark-grey background on hover */
   }
   .content_container.page_grid.contents {
     display: grid;
-    grid-template-columns: [col1] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [col7];
+    grid-template-columns: [col1] 1fr [col3] 1fr [col5] 1fr [col7];
     grid-gap: 40px;
   }
   .footer {
