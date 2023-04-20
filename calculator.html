@@ -19,7 +19,7 @@
   <meta name="theme-color" content="#fafafa">
   <script>
   let calculateDbh = function () {
-    var diameter = parseFloat(document.getElementById("circumference").value/3.141592);
+    var diameter = parseInt(document.getElementById("circumference").value/3.141592);
     var growth_factor = parseFloat(document.getElementById("type").value);
     let result = diameter * growth_factor; 
         document.getElementById("total").value = result;
