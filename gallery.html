@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bonsai</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="manifest" href="site.webmanifest">
+  <link href='https://fonts.googleapis.com/css?family=Rozha One' rel='stylesheet'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style-contactus.css">
+  <script src="java.js" defer ></script>
+  <meta name="theme-color" content="#fafafa">
+
+  <script>
+    function swap(evt) {
+			document.getElementById("image").src = this.getAttribute("href");
+			document.getElementById("caption").innerHTML= this.getAttribute("title"); 
+
+		//Cancel the default action of a click event for hyperlinked items.  
+		//if(!evt) {evt=window.event;} 
+			if(evt.preventDefault) {evt.preventDefault();}
+			else {evt.returnValue=false;}    
+		}        
+
+		window.onload = function() {
+		let images = document.getElementById("image_list").getElementsByTagName("a");   
+			for(i=0; i <images.length;i++) {
+				images[i].onclick = swap;
+			}
+		}
+  </script>
+</head>
+
+<body>
+  <nav class="stripe menubar">
+      <div class="content_container">
+        <ul>
+          <li style="float: left;"><img class="logo" src="images/logo.png"><span><a class="logo" href="home.html">Bonsai</a></span></li>
+          <li><a href="information.html">INFORMATION</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="contactus.html">CONTACT US</a></li>
+          <li></li>
+          <li></li>
+          <li>
+            <input type="text" placeholder="Search..">
+          </li>
+        </ul>
+      </div>
+</nav>
+
+<section id="gallery">
+  <h1>Gallery</h1>
+    <ul id="image_list">
+        <li><a href="images/image1.jpg"  title="Grilled Kind Crab Leg" id="first_link">
+          <img src="thumbnails/image1.jpg" width =60px height=40px alt=""></a></li>
+        <li><a href="images/image2.jpg" title="Udon">
+          <img src="thumbnails/image2.jpg" width =60px height=40px alt=""></a></li>
+        <li><a href="images/image3.jpg" title="Grilled Octopus Salad">
+          <img src="thumbnails/image3.jpg" width =60px height=40px alt=""></a></li>
+        <li><a href="images/image4.jpg" title="UNI Mini Tacos">
+          <img src="thumbnails/image4.jpg" width =60px height=40px alt=""></a></li>
+        <li><a href="images/image5.jpg" title="Tempura Set">
+          <img src="thumbnails/image5.jpg" width =60px height=40px alt=""></a></li>
+        <li><a href="images/image6.jpg" title="Kobe Beef">
+          <img src="thumbnails/image6.jpg" width =60px height=40px alt=""></a></li>
+          <li><a href="images/image7.jpg" title="Filet Mignon">
+          <img src="thumbnails/image7.jpg" width =60px height=40px alt=""></a></li>
+    </ul>
+    <h2 id="caption">Popular Menu</h2>         
+    <p><img src="images/image1.jpg" width =500px height=300px alt="" id="image"></p>
+</section>	
+   
+<!-- top button -->
+<button onclick="topFunction()" id="top" title="Go to top">Top</button>
+
+<!-- footer -->
+  <footer class="footer">
+    <div class="footer1">
+      <p class="logoend" href="home.html"><a>Bonsai</a></p>
+      <img class="logoend" src="images/logo.png">
+    </div>
+    <div class="footer2">
+      <p class="footer2">
+        Written by Kaia Nguyen, Khanh Mai, Ngoc Uong and Rachel Farver. <br>
+        At Miami University, Oxford, Ohio, USA. <br> 
+        &copy; Art of Bonsai, 2023
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
