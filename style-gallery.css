@@ -482,7 +482,7 @@ h1 {
     font-family: 'Lato', sans-serif;
 }
 
-header, section, aside, nav, article, figure, figcaption {
+header, section, aside, nav {
     display: block;}
 
 body {
@@ -501,12 +501,7 @@ header {
     height: 160px;
    }
 
-nav, footer {
-    margin-top: -10px;
-    clear: both;
-    color: #ffffff;
-    background-color: #aeaca8;
-    height: 35px;}
+
 
 nav ul {
     margin: 0px;
