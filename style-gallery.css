@@ -482,7 +482,7 @@ h1 {
     font-family: 'Lato', sans-serif;
 }
 
-header, section, footer, aside, nav, article, figure, figcaption {
+header, section, aside, nav, article, figure, figcaption {
     display: block;}
 
 body {
