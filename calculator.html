@@ -24,8 +24,8 @@
     var stem = parseFloat(document.getElementById("stem").value);
     var inch = parseFloat(document.getElementById("inch").value);
     let result; 
-    if (unit == 1) { 
-      if (stem == 1){
+    if (unit == "1") { 
+      if (stem == "1"){
         let circumference = diameter/3.141592;
         result = circumference * growth_factor;
         document.getElementById("total").value = "The estimated age is " + result + " years old";}
@@ -35,8 +35,8 @@
       }
     }
     else {
-      var new_diameter = diameter * 2.54; 
-      if (stem == 1){
+      let new_diameter = diameter * 2.54; 
+      if (stem == "1"){
         let circumference = new_diameter/3.141592;
         result = circumference * growth_factor;
         document.getElementById("total").value = "The estimated age is " + result + " years old";}
