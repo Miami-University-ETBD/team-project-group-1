@@ -484,7 +484,7 @@ h1 {
 
 header, section, aside, nav {
     display: block;}
-    
+
 .wrapper {
     width: 940px;
     margin: 20px auto 20px auto;
@@ -497,12 +497,12 @@ header {
 
 
 
-nav ul {
+nav ul.image_list {
     margin: 0px;
     padding: 5px 0px 5px 30px;
 }
 
-nav li {
+nav li.image_list {
     display: inline;
     margin-right: 40px;}
 
