@@ -14,16 +14,16 @@ body {
     padding: 0px;
   }
   .stripe.introduction h1 {
-    font-family: 'Rozha One',serif;
-    text-align: center;
-    font-size: 4.5em;
-    font-weight: 100;
-    color: #323232;
-    margin-top: 25vh;
-    margin-bottom: 0vh;
-    margin-left: auto;
-    margin-right: auto;
-    letter-spacing: 5px; 
+  font-family: 'Rozha One',serif;
+  text-align: center;
+  font-size: 4.5em;
+  font-weight: 100;
+  color: #323232;
+  margin-top: 25vh;
+  margin-bottom: 0vh;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 5px;
   }
 
   .stripe.introduction h2 {
