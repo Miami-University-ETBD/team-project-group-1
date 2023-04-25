@@ -26,10 +26,10 @@
     let result; 
     if (unit == "1") { 
       if (stem == "1"){
+        diameter = diameter/3.141592;
         result = diameter * growth_factor;
         document.getElementById("total").value = "The estimated age is " + result + " years old";}
       else {
-        diameter += diameter/3.141592;
         result = diameter * growth_factor;
         document.getElementById("total").value = "The estimated age is " + result + " years old";
       }
