@@ -484,13 +484,6 @@ h1 {
 
 header, section, aside, nav {
     display: block;}
-
-body {
-    background-position: center;
-    font-family: Georgia, Times, serif;
-    line-height: 1.4em;
-    margin: 0px;}
-
 .wrapper {
     width: 940px;
     margin: 20px auto 20px auto;
