@@ -26,8 +26,8 @@
     let result; 
     if (unit == "1") { 
       if (stem == "1"){
-        let circumference = diameter/3.141592;
-        result = circumference * growth_factor;
+        diameter += diameter/3.141592;
+        result = diameter * growth_factor;
         document.getElementById("total").value = "The estimated age is " + result + " years old";}
       else {
         result = diameter * growth_factor;
@@ -35,13 +35,13 @@
       }
     }
     else {
-      let new_diameter = diameter * 2.54; 
+      diameter += diameter * 2.54; 
       if (stem == "1"){
-        let circumference = new_diameter/3.141592;
-        result = circumference * growth_factor;
+        diameter += diameter/3.141592;
+        result = diameter * growth_factor;
         document.getElementById("total").value = "The estimated age is " + result + " years old";}
       else {
-        result = new_diameter * growth_factor;
+        result = diameter * growth_factor;
         document.getElementById("total").value = "The estimated age is " + result + " years old";
       }
     }
