@@ -21,8 +21,8 @@
   let calculateDbh = function () {
     var diameter = parseInt(document.getElementById("circumference").value);
     var growth_factor = parseFloat(document.getElementById("type").value);
-    let stem = prompt(document.getElementById("stem").value);
-    let inch = prompt(document.getElementById("inch").value);
+    let stem = parseFloat(document.getElementById("stem").value);
+    let inch = parseFloat(document.getElementById("inch").value);
     let result; 
     if (unit == "1") { 
       if (stem == "1"){
