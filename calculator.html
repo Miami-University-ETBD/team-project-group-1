@@ -19,9 +19,28 @@
   <meta name="theme-color" content="#fafafa">
   <script>
   let calculateDbh = function () {
-    var diameter = parseInt(document.getElementById("circumference").value/3.141592);
+    var diameter = parseInt(document.getElementById("circumference").value);
     var growth_factor = parseFloat(document.getElementById("type").value);
-    let result = diameter * growth_factor; 
+    var stem = parseFloat(document.getElementById("stem").value);
+    var inch = parseFloat(document.getElementById("inch").value);
+    let result; 
+    if (unit == 1) { 
+      if (stem == 1){
+        let circumference = diameter/3.141592;
+        result = circumference * growth_factor;}
+      else {
+        result = diameter * growth_factor;
+      }
+    }
+    else {
+      let diameter = diameter * 2.54; 
+      if (stem == 1){
+        let circumference = diameter/3.141592;
+        result = circumference * growth_factor;}
+      else {
+        result = diameter * growth_factor;
+      }
+    }
         document.getElementById("total").value = "The estimated age is " + result + " years old";
         }
     window.onload = function () {
@@ -100,9 +119,20 @@
               <option value="11.2">Yew, Common Yew</option>
             </select>
             <br />  
-          <label for="amount"><b>Circumference at Breast Height (CBH) in inch</b></label>
+            <label for="stem"><b>Circumference or diameter</b></label>
+            <select id="stem">
+              <option value="1">Circumference</option>
+              <option value="2">Diameter</option>
+            </select>
+          <label for="amount"><b>Circumference or diameter at Breast Height (CBH)</b></label>
           <input type="textform" id="circumference" />
           <br />
+          <label for="unit"><b>In inch or cm</b></label>
+          <select id="unit">
+            <option value="1">Inch</option>
+            <option value="2">Cm</option>
+          </select>
+          <br /> 
           <label for="total">Result:</label>
           <input type="textform" id="total" disabled />
           <br />
