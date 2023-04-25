@@ -33,12 +33,12 @@
       }
     }
     else {
-      let diameter = diameter * 2.54; 
+      var new_diameter = diameter * 2.54; 
       if (stem == 1){
-        let circumference = diameter/3.141592;
+        let circumference = new_diameter/3.141592;
         result = circumference * growth_factor;}
       else {
-        result = diameter * growth_factor;
+        result = new_diameter * growth_factor;
       }
     }
         document.getElementById("total").value = "The estimated age is " + result + " years old";
