@@ -655,11 +655,6 @@ background-color: #505050; /* Add a dark-grey background on hover */
   .content_container input[type=text] {
     border: 1px solid #ccc;  
   }
-  img.logoend {
-    display: block;
-    width: 10%;
-    margin: auto;
-  }
 }
 @media (min-width: 375px) and (max-width: 768px) {
   .flex-item-right, .flex-item-left {
