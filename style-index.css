@@ -656,9 +656,13 @@ background-color: #505050; /* Add a dark-grey background on hover */
     margin: 0;
     padding: 14px;
   }
-  
   .content_container input[type=text] {
     border: 1px solid #ccc;  
+  }
+  img.logoend {
+    display: block;
+    width: 10%;
+    margin: auto;
   }
 }
 @media (min-width: 375px) and (max-width: 768px) {
