@@ -604,7 +604,7 @@ font-size: 18px; /* Increase font size */
 background-color: #505050; /* Add a dark-grey background on hover */
 }
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 1280px) {
   .stripe {
     grid-template-columns: [left] 100px [col1] 1fr [col7] 100px [right];
   }
