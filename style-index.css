@@ -715,8 +715,11 @@ background-color: #505050; /* Add a dark-grey background on hover */
     font-size: 2em;
   }
   .stripe.introduction h2 {
-    font-size: 18px;
+    font-size: 16px;
   }
+  p.intro_text {
+    font-size: 14px;
+}
   div.content_item {
     margin-top: 5vh;
     margin-bottom: 5vh;
