@@ -696,7 +696,7 @@ background-color: #505050; /* Add a dark-grey background on hover */
     text-align: left;
   }
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 375px) {
   .menubar ul {
     display: none;
 }
