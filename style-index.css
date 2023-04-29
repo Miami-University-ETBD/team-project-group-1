@@ -709,10 +709,10 @@ background-color: #505050; /* Add a dark-grey background on hover */
     text-align: left;
   }
   .stripe.introduction {
-    background-size: 150%;
+    background-size: 300%;
   }
   .stripe.introduction h1 {
-    font-size: 3.5em;
+    font-size: 2em;
   }
   .stripe.introduction h2 {
     font-size: 18px;
