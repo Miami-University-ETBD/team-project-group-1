@@ -646,7 +646,7 @@ background-color: #505050; /* Add a dark-grey background on hover */
 @media (min-width: 768px) and (max-width: 1280px) {
   .content_container input[type=text] {
     float: none;
-    display: block;
+    display: none;
     text-align: left;
     width: 100%;
     margin: 0;
@@ -663,7 +663,7 @@ background-color: #505050; /* Add a dark-grey background on hover */
   }
   .content_container input[type=text] {
     float: none;
-    display: block;
+    display: none;
     text-align: left;
     width: 100%;
     margin: 0;
@@ -681,7 +681,7 @@ background-color: #505050; /* Add a dark-grey background on hover */
   }
   .content_container input[type=text] {
     float: none;
-    display: block;
+    display: none;
     text-align: left;
     width: 100%;
     margin: 0;
