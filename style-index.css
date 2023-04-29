@@ -713,6 +713,7 @@ background-color: #505050; /* Add a dark-grey background on hover */
   }
   .stripe.introduction h1 {
     font-size: 2em;
+    margin-top: 20px;
   }
   .stripe.introduction h2 {
     font-size: 16px;
