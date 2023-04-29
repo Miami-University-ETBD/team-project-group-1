@@ -199,6 +199,12 @@ a.logo {
   text-transform: uppercase;
   font-size: 16px;
 }
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
 .topnav .icon {
   display: none;
 }
@@ -616,17 +622,6 @@ background-color: #505050; /* Add a dark-grey background on hover */
     grid-template-columns: [col1] 1fr [col3] 1fr [col5] 1fr [col7];
     grid-gap: 40px;
   }
-  .topnav a {
-    float: left;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-  }
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
 }
 @media (min-width: 768px) and (max-width: 1280px) {
   .content_container input[type=text] {
@@ -639,6 +634,10 @@ background-color: #505050; /* Add a dark-grey background on hover */
   }
   .content_container input[type=text] {
     border: 1px solid #ccc;  
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
