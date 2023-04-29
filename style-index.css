@@ -671,6 +671,10 @@ background-color: #505050; /* Add a dark-grey background on hover */
   .stripe.introduction h2 {
     font-size: 18px;
   }
+  div.content_item {
+    margin-top: 5vh;
+    margin-bottom: 0vh;
+}
 }
 @media (min-width: 376px) and (max-width: 767px) {
   .menubar ul {
