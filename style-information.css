@@ -458,6 +458,7 @@ body {
 	}
 	.stripe.introduction {
 	  background-size: 150%;
+	  height: 100vh;
 	}
 	.stripe.introduction h1 {
 	  font-size: 3.5em;
