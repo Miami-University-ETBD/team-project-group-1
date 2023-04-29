@@ -648,7 +648,11 @@ background-color: #505050; /* Add a dark-grey background on hover */
     font-size: 17px;
   }
   .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
+  .topnav a.icon1 {
+    float: right;
+    display: block;
+  }
+  .topnav a.icon2 {
     float: right;
     display: block;
   }
