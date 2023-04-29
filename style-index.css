@@ -626,21 +626,10 @@ background-color: #505050; /* Add a dark-grey background on hover */
     grid-template-columns: [col1] 1fr [col3] 1fr [col5] 1fr [col7];
     grid-gap: 40px;
   }
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .flex-item-left {
-    padding: 0px;
-    flex: 50%;
-    margin-left: 5vw;
-  }
-  
-  .flex-item-right {
-    padding: 0px;
-    flex: 50%;
-    margin-right: 5vw;
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
 }
 @media (min-width: 768px) and (max-width: 1280px) {
