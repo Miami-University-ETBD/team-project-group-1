@@ -646,6 +646,7 @@ background-color: #505050; /* Add a dark-grey background on hover */
     text-decoration: none;
     font-size: 17px;
   }
+  .topnav a:not(:first-child) {display: none;}
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
