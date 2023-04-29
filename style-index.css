@@ -157,6 +157,19 @@ body {
   z-index: 9999;
   box-shadow: 0px 12px 24px rgb(0 0 0 / 10%);
 }
+.menubar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  display: flex;
+  justify-content: space-around;
+}
+.menubar ul li {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+}
 .menubar a {
   text-decoration: none;
   letter-spacing: 1px;
@@ -198,15 +211,6 @@ a.logo {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
-}
-.topnav a {
-  float: left;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-}
-.topnav .icon {
-  display: none;
 }
 /*======================menubar========================*/
 /* copy all of these to your css file to make sure our menubar look similar*/
@@ -492,14 +496,6 @@ button.content_information a {
   padding: 50px 20px;
 }
   /*======================footer========================*/
-  .footer {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    background-color: #000000;
-    display: grid;
-    grid-template-columns: [col1] 1fr [col7];
-    grid-gap: 0px;
-  }
   div.footer1 {
     margin-left: auto;
     margin-right: auto;
@@ -608,7 +604,7 @@ font-size: 18px; /* Increase font size */
 background-color: #505050; /* Add a dark-grey background on hover */
 }
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 880px) {
   .stripe {
     grid-template-columns: [left] 100px [col1] 1fr [col7] 100px [right];
   }
@@ -622,61 +618,23 @@ background-color: #505050; /* Add a dark-grey background on hover */
     grid-template-columns: [col1] 1fr [col3] 1fr [col5] 1fr [col7];
     grid-gap: 40px;
   }
-}
-@media (min-width: 768px) and (max-width: 1280px) {
-  .content_container input[type=text] {
-    float: none;
-    display: none;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .content_container input[type=text] {
-    border: 1px solid #ccc;  
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: [col1] 1fr [col7];
+    grid-gap: 0px;
   }
 }
-@media (min-width: 375px) and (max-width: 768px) {
+@media (max-width: 800px) {
   .flex-item-right, .flex-item-left {
     flex-direction: column;
     margin: 0px;
   }
   .content_container input[type=text] {
     float: none;
-    display: none;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  
-  .content_container input[type=text] {
-    border: 1px solid #ccc;  
-  }
-}
-@media only screen and (min-width: 375px) {
-  .flex-item-right, .flex-item-left {
-    flex-direction: column;
-    margin: 0px;
-  }
-  .content_container input[type=text] {
-    float: none;
-    display: none;
+    display: block;
     text-align: left;
     width: 100%;
     margin: 0;
