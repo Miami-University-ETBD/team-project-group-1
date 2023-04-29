@@ -325,6 +325,14 @@ body {
     vertical-align: middle;
   }
   /*======================footer========================*/
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: [col1] 1fr [col7];
+    grid-gap: 0px;
+  }
   .content_container {
 	grid-column-start: col1;
 	grid-column-end: col7;
