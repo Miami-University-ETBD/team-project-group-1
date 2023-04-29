@@ -521,6 +521,9 @@ body {
 	}
 	.stripe.introduction h2 {
 	  font-size: 16px;
+	  margin-top: 5vh;
+	  margin-left: 5vw;
+	  margin-right: 5vw;
 	}
   }
   @media only screen and (max-width: 374px) {
@@ -573,19 +576,9 @@ body {
 	}
 	.stripe.introduction h2 {
 	  font-size: 16px;
-	}
-	p.intro_text {
-	  font-size: 14px;
-	}
-	p.overall {
-	  font-size: 1em;
-	}
-	p.overallblockquote {
-	  font-size: 1em;
-	}
-	div.content_item {
 	  margin-top: 5vh;
-	  margin-bottom: 5vh;
+	  margin-left: 5vw;
+	  margin-right: 5vw;
 	}
   }
   @media print,
