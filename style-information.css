@@ -424,12 +424,21 @@ body {
 	  font-size: 17px;
 	}
 	.topnav a:not(:first-child) {display: none;}
-	.topnav a.icon {
+	.topnav a.icon1 {
+	  float: right;
+	  display: block;
+	}
+	.topnav a.icon2 {
 	  float: right;
 	  display: block;
 	}
 	.topnav.responsive {position: relative;}
-	.topnav.responsive .icon {
+	.topnav.responsive .icon1 {
+	  position: absolute;
+	  right: 6.5vw;
+	  top: 0;
+	}
+	.topnav.responsive .icon2 {
 	  position: absolute;
 	  right: 0;
 	  top: 0;
@@ -470,12 +479,21 @@ body {
 	  font-size: 17px;
 	}
 	.topnav a:not(:first-child) {display: none;}
-	.topnav a.icon {
+	.topnav a.icon1 {
+	  float: right;
+	  display: block;
+	}
+	.topnav a.icon2 {
 	  float: right;
 	  display: block;
 	}
 	.topnav.responsive {position: relative;}
-	.topnav.responsive .icon {
+	.topnav.responsive .icon1 {
+	  position: absolute;
+	  right: 12vw;
+	  top: 0;
+	}
+	.topnav.responsive .icon2 {
 	  position: absolute;
 	  right: 0;
 	  top: 0;
@@ -526,12 +544,21 @@ body {
 	  font-size: 17px;
 	}
 	.topnav a:not(:first-child) {display: none;}
-	.topnav a.icon {
+	.topnav a.icon1 {
+	  float: right;
+	  display: block;
+	}
+	.topnav a.icon2 {
 	  float: right;
 	  display: block;
 	}
 	.topnav.responsive {position: relative;}
-	.topnav.responsive .icon {
+	.topnav.responsive .icon1 {
+	  position: absolute;
+	  right: 12vw;
+	  top: 0;
+	}
+	.topnav.responsive .icon2 {
 	  position: absolute;
 	  right: 0;
 	  top: 0;
