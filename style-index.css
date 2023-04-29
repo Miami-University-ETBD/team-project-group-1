@@ -735,7 +735,7 @@ background-color: #505050; /* Add a dark-grey background on hover */
 @media only screen and (max-width: 374px) {
   .menubar ul {
     display: none;
-}
+  }
   .topnav {
     display: block;
   }
@@ -763,6 +763,29 @@ background-color: #505050; /* Add a dark-grey background on hover */
     float: none;
     display: block;
     text-align: left;
+  }
+  .stripe.introduction {
+    background-size: 300%;
+  }
+  .stripe.introduction h1 {
+    font-size: 2em;
+    margin-top: 20vh;
+  }
+  .stripe.introduction h2 {
+    font-size: 16px;
+  }
+  p.intro_text {
+    font-size: 14px;
+  }
+  p.overall {
+    font-size: 1em;
+  }
+  p.overallblockquote {
+    font-size: 1em;
+  }
+  div.content_item {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
 }
 @media print,
