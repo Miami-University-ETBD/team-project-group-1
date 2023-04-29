@@ -673,7 +673,7 @@ background-color: #505050; /* Add a dark-grey background on hover */
   }
   div.content_item {
     margin-top: 5vh;
-    margin-bottom: 0vh;
+    margin-bottom: 5vh;
 }
 }
 @media (min-width: 376px) and (max-width: 767px) {
