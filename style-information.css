@@ -513,6 +513,7 @@ body {
 	}
 	.stripe.introduction {
 	  background-size: 300%;
+	  height: 100vh;
 	}
 	.stripe.introduction h1 {
 	  font-size: 2em;
@@ -520,19 +521,6 @@ body {
 	}
 	.stripe.introduction h2 {
 	  font-size: 16px;
-	}
-	p.intro_text {
-	  font-size: 14px;
-	}
-	p.overall {
-	  font-size: 1em;
-	}
-	p.overallblockquote {
-	  font-size: 1em;
-	}
-	div.content_item {
-	  margin-top: 5vh;
-	  margin-bottom: 5vh;
 	}
   }
   @media only screen and (max-width: 374px) {
