@@ -659,7 +659,7 @@ background-color: #505050; /* Add a dark-grey background on hover */
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon1 {
     position: absolute;
-    right: 7vw;
+    right: 6.5vw;
     top: 0;
   }
   .topnav.responsive .icon2 {
