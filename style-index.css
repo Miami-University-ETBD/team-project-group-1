@@ -496,6 +496,14 @@ button.content_information a {
   padding: 50px 20px;
 }
   /*======================footer========================*/
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: [col1] 1fr [col7];
+    grid-gap: 0px;
+  }
   div.footer1 {
     margin-left: auto;
     margin-right: auto;
@@ -604,7 +612,7 @@ font-size: 18px; /* Increase font size */
 background-color: #505050; /* Add a dark-grey background on hover */
 }
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 1280px) {
   .stripe {
     grid-template-columns: [left] 100px [col1] 1fr [col7] 100px [right];
   }
@@ -617,14 +625,6 @@ background-color: #505050; /* Add a dark-grey background on hover */
     display: grid;
     grid-template-columns: [col1] 1fr [col3] 1fr [col5] 1fr [col7];
     grid-gap: 40px;
-  }
-  .footer {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    background-color: #000000;
-    display: grid;
-    grid-template-columns: [col1] 1fr [col7];
-    grid-gap: 0px;
   }
 }
 @media (max-width: 800px) {
