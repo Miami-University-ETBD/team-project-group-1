@@ -16,6 +16,7 @@
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style-contactus.css">
   <script src="java.js" defer ></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -90,26 +91,70 @@
   </footer>
 
 <script>
-        function handleSubmit(event) {
-        event.preventDefault();
-        const nameInput = document.getElementById('name');
-        const emailInput = document.getElementById('email');
-        const bonsaiNameInput = document.getElementById('bonsai-name');
-        const descriptionInput = document.getElementById('description');
-        const resourceInput = document.getElementById('resource');
-        const name = nameInput.value;
-        const email = emailInput.value;
-        const bonsaiName = bonsaiNameInput.value;
-        const description = descriptionInput.value;
-        const resource = resourceInput.value;
-        const formData = { name, email, bonsaiName, description, resource };
-      }
+      //   function handleSubmit(event) {
+      //   event.preventDefault();
+      //   const nameInput = document.getElementById('name');
+      //   const emailInput = document.getElementById('email');
+      //   const bonsaiNameInput = document.getElementById('bonsai-name');
+      //   const descriptionInput = document.getElementById('description');
+      //   const resourceInput = document.getElementById('resource');
+      //   const name = nameInput.value;
+      //   const email = emailInput.value;
+      //   const bonsaiName = bonsaiNameInput.value;
+      //   const description = descriptionInput.value;
+      //   const resource = resourceInput.value;
+      //   const formData = { name, email, bonsaiName, description, resource };
+      // }
 
-      // Display HTML message
-      let form = document.getElementsByTagName("form")[0]; form.addEventListener("submit", (e) => {
-        e.preventDefault();
+      // // Display HTML message
+      // let form = document.getElementsByTagName("form")[0]; form.addEventListener("submit", (e) => {
+      //   e.preventDefault();
+      //   alert("Thank you for submitting! We will review your request shortly.");
+      // });
+
+  $(document).ready(function() {
+  // Validate the form
+    $("form").validate({
+      rules: {
+        name: {
+          required: true
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        "new-tree-name": {
+          required: true
+        },
+        description: {
+          required: true
+        }
+      },
+      messages: {
+        name: "Please enter your name",
+        email: "Please enter a valid email address",
+        "new-tree-name": "Please enter the name of the new bonsai tree",
+        description: "Please enter a description"
+      },
+      // Handle form submission
+      submitHandler: function(form) {
+        // Prevent default form submission
+        event.preventDefault();
+        // Get form data
+        const name = $("#name").val();
+        const email = $("#email").val();
+        const bonsaiName = $("#new-tree-name").val();
+        const description = $("#description").val();
+        const resource = $("#related-resource").val();
+        const formData = { name, email, bonsaiName, description, resource };
+        // Display success message
         alert("Thank you for submitting! We will review your request shortly.");
-      });
+        // Clear the form
+        form.reset();
+      }
+    });
+  });
+  
   </script>
 
 </body>

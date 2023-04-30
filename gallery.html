@@ -19,22 +19,35 @@
   <meta name="theme-color" content="#fafafa">
 
   <script>
-    function swap(evt) {
-			document.getElementById("image").src = this.getAttribute("href");
-			document.getElementById("caption").innerHTML= this.getAttribute("title"); 
+    // function swap(evt) {
+		// 	document.getElementById("image").src = this.getAttribute("href");
+		// 	document.getElementById("caption").innerHTML= this.getAttribute("title"); 
 
-		//Cancel the default action of a click event for hyperlinked items.  
-		//if(!evt) {evt=window.event;} 
-			if(evt.preventDefault) {evt.preventDefault();}
-			else {evt.returnValue=false;}  
-		}        
+		// //Cancel the default action of a click event for hyperlinked items.  
+		// //if(!evt) {evt=window.event;} 
+		// 	if(evt.preventDefault) {evt.preventDefault();}
+		// 	else {evt.returnValue=false;}  
+		// }        
 
-		window.onload = function() {
-		let images = document.getElementById("image_list").getElementsByTagName("a");   
-			for(i=0; i <images.length;i++) {
-				images[i].onclick = swap;
-			}
-		}
+		// window.onload = function() {
+		// let images = document.getElementById("image_list").getElementsByTagName("a");   
+		// 	for(i=0; i <images.length;i++) {
+		// 		images[i].onclick = swap;
+		// 	}
+		// }
+
+  $(document).ready(function() {
+    $("#image_list a").click(function(evt) {
+      evt.preventDefault();
+      var imgSrc = $(this).attr("href");
+      var imgCaption = $(this).attr("title");
+      $("#image").fadeOut(500, function() {
+        $("#image").attr("src", imgSrc);
+        $("#caption").text(imgCaption);
+        $("#image").fadeIn(500);
+      });
+    });
+  });
   </script>
 </head>
 
