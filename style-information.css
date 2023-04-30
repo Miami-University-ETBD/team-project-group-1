@@ -165,13 +165,8 @@ body {
   	padding: 0px;
   	font-size: 16px;
   }
-  .slideshow {
-	margin-left: 300px;
-	margin-right: 300px;
-  }
-  .slideshow h2 {
-	text-align: center;
-  }
+
+
 
 /* Slideshow container */
 .slideshow-container {
