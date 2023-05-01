@@ -67,7 +67,7 @@ body {
 }
 
 .panel {
-  padding: 2vh 2vw;
+  padding: 2vh 2vw !important;
   background-color: #fff;
   display: none;
   overflow: hidden;
