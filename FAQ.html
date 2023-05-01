@@ -14,10 +14,11 @@
   <link rel="manifest" href="site.webmanifest">
   <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
   <link rel="stylesheet" href="style-FAQ.css">
+  <link rel="stylesheet" href="jquery-ui.css">
   <script src="java.js" defer ></script>
   <meta name="theme-color" content="#fafafa">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="jquery-ui.js"></script>
   <script>
     function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -28,7 +29,9 @@ function closeNav() {
 }
 
 $( function() {
-    $( ".button-containter" ).accordion();
+    $( ".button-containter" ).accordion({
+      collapsible: true
+});
   } );
 
 </script>
