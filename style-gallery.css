@@ -443,17 +443,6 @@ html {
       page-break-after: avoid;
     }
   }
-
-header, aside, nav {
-    display: block;}
-
-.wrapper {
-    width: 940px;
-    margin: 20px auto 20px auto;
-    border: 2px solid #000000;
-    background-color: #ffffff;
-  }
-
     section.gallery {
       margin-top: 10vh; 
       margin-right: auto; 
