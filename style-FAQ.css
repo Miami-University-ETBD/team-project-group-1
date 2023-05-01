@@ -36,6 +36,9 @@ body {
     margin-right: auto;
     letter-spacing: 2px; 
   }
+  .topnav {
+    display: none;
+    }
   section.button-containter {
     margin-top: 20vh;
     margin-bottom: 20vh; 
