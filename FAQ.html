@@ -16,6 +16,22 @@
   <link rel="stylesheet" href="style-FAQ.css">
   <script src="java.js" defer ></script>
   <meta name="theme-color" content="#fafafa">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+$( function() {
+    $( ".button-containter" ).accordion();
+  } );
+
+</script>
 </head>
 
 <body>
@@ -56,14 +72,14 @@
 
 <div class="stripe fact">
   <div class="content_container">
-<section class="button-containter">
-  <button class="accordion">Bonsai Tree Care</button>
+<div class="button-containter">
+  <h3 class="accordion">Bonsai Tree Care</h3>
   <div class="panel bonsai-tree-care">
       <p>Bonsai trees are planted in small pots with minimal water and nutrient reserves! In order to keep your Bonsai healthy you need to water and fertilize regularly. They require lots of water, light, and fertilizer in order to really thrive!</p>
       <p>Determining where the best spot for your Bonsai is a tough task, however, there are many different factors that need to be taken into consideration such as the climate and time of year.</p>
       <p>Watering is the most important part of taking care of your Bonsai but is often overlooked. How often your Bonsai needs water is determined by the size of the tree, size of its pot, the time of year, type of soil-mixture, and the local climate. </p>
       <p>In order for your Bonsai to survive, fertilizing reguarly is cruical. </p></div>
-      <button class="accordion">Growing and Cultiviating</button>
+      <h3 class="accordion">Growing and Cultiviating</h3>
       <div class="panel growing and cultiviating">
           <p> When growing from a seed it takes at least five years of growing before your Bonsai will resemble a tree. Buying one from a nursey will result in you being able to style it right away!</p>
           <p>If you chose to start your Bonsai growing journey it allowes you to expereince the fun of shaping your own tree! You can grow a Bonsai from either seeds, cuttings, or buying Bonsai nursery stock!</p>
@@ -71,19 +87,19 @@
       </div>
 
 
-      <button class="accordion">Styling</button>
+      <h3 class="accordion">Styling</h3>
       <div class="panel styling">
           <p>Bonsai trees are normal planets that are propagated like any other, however, they are trained using sophisicated techniques that keep them smaller.</p>
           <p> The styping of Bonsai trees include methods such as regular pruning and wiring, while also including more advanced techniques like creation of deadwood!</p>
       </div>
 
-      <button class="accordion">Popular Tree Species</button>
+      <h3 class="accordion">Popular Tree Species</h3>
       <div class="panel popular-tree-species">
           <p>Each Bonsai tree has specific requirements for its training, cultivation, and care! Knowing which Bonsai tree you have will be crical in ensuring you are providing it with proper care!</p>
           <p>The most popular tree species are the Ficus and Juniper! </p>
           <p>
       </div>
-      <button class="accordion">Best Bonsai for Beginners</button>
+      <h3 class="accordion">Best Bonsai for Beginners</h3>
       <div class="panel best-bonsai-for-beginners">
           <p>When picing your tree it is very important that you pick the correct species. Tropical and sub-tropical tree species can be kept indoors, however, temperature trees can only be grown outside.</p>
           <p>Choice #1: Ficus! This is the most popular indoor Bonsai because it is a very resilent tree with very beautiful leaves!</p>
@@ -92,32 +108,24 @@
           <p>Choice #4: Japanese Maple! This tree is known for its beautiful fall colors, but needs winter protection!</p>
           <p>Overall, it comes down to where your Bonsai will be kept that impacts which one you should get! However, all of these are great options!</p>
       </div>
-  </section>
+    </div>
 </div>
 </div>
 
-  <script>
-    function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
 
 <script>
     /* variables */
     var acc = document.getElementsByClassName("accordion");
     var i;
   
-    /* Toggle between adding and removing the class "active". This interacts with the CSS to highlight the button that controls the panel */
+    /* Toggle between adding and removing the class "active". This interacts with the CSS to highlight the button that controls the panel 
   
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
       this.classList.toggle("active");
   
-      /* If click occurs, it also checks the status of the panel and toggles whether the panel is shown or hidden */
+       If click occurs, it also checks the status of the panel and toggles whether the panel is shown or hidden 
       var panel = this.nextElementSibling;
       if (panel.style.display === "block") {
         panel.style.display = "none";
@@ -125,7 +133,7 @@ function closeNav() {
         panel.style.display = "block";
       }
     });
-  }
+  } */
   </script>
 
 
