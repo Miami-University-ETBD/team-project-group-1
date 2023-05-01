@@ -135,6 +135,7 @@ textarea {
 .clearfix::after {
   clear: both;
 }
+
 /*===================typography========================*/
 body {
   background-color: #ffffff;
@@ -144,6 +145,7 @@ body {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+
 /*===================typography========================*/
 /*======================menubar========================*/
 .menubar {
@@ -156,6 +158,7 @@ body {
   z-index: 9999;
   box-shadow: 0px 12px 24px rgb(0 0 0 / 10%);
 }
+
 .menubar ul {
   list-style-type: none;
   padding: 0;
@@ -164,11 +167,13 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
 .menubar ul li {
   display: flex;
   vertical-align: middle;
   align-items: center;
 }
+
 .menubar a {
   text-decoration: none;
   letter-spacing: 1px;
@@ -178,6 +183,7 @@ body {
   color: #505050 !important;
   vertical-align: middle;
 }
+
 .menubar a:hover {
   background-color: grey;
 }
@@ -186,6 +192,7 @@ img.logo {
   width: 50px;
   height: fit-content;
 }
+
 a.logo {
   text-decoration: none;
   text-transform: uppercase;
@@ -195,6 +202,7 @@ a.logo {
   color: #ffffff;
   vertical-align: middle;
 }
+
 .content_container input[type="text"] {
   float: right;
   padding: 6px;
@@ -206,14 +214,17 @@ a.logo {
   border-left: 0px;
   font-size: 17px;
 }
+
 ::placeholder {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
 }
+
 .topnav {
   display: none;
 }
+
 /*======================menubar========================*/
 /* copy all of these to your css file to make sure our menubar look similar*/
 button.learnmore {
@@ -228,6 +239,7 @@ button.learnmore {
   border: 0px;
   border-radius: 8px;
 }
+
 button.learnmore a {
   text-decoration: none;
   color: #ffffff;
@@ -237,6 +249,7 @@ button.learnmore a {
   letter-spacing: 1px;
   padding: 50px 20px;
 }
+
 button.information {
   display: block;
   margin: auto;
@@ -248,6 +261,7 @@ button.information {
   border: 0px;
   border-radius: 8px;
 }
+
 button.information a {
   text-decoration: none;
   color: #323232;
@@ -257,6 +271,7 @@ button.information a {
   letter-spacing: 1px;
   padding: 50px 20px;
 }
+
 button.overlay {
   display: block;
   margin-top: 20px;
@@ -267,6 +282,7 @@ button.overlay {
   border: 2px solid #323232;
   cursor: pointer;
 }
+
 button.overlay a {
   text-decoration: none;
   color: #323232;
@@ -276,6 +292,7 @@ button.overlay a {
   letter-spacing: 1px;
   padding: 20px;
 }
+
 p.intro_text {
   text-align: center;
   margin-top: 5vh;
@@ -285,6 +302,7 @@ p.intro_text {
   padding: 0px;
   font-size: 16px;
 }
+
 p.overall {
   margin-top: 0vh;
   margin-bottom: 0vh;
@@ -292,6 +310,7 @@ p.overall {
   font-size: 1.125em;
   color: #ffffff;
 }
+
 p.overallblockquote {
   margin-top: 10px;
   margin-bottom: 0vh;
@@ -301,37 +320,42 @@ p.overallblockquote {
   font-style: italic;
   color: #ffffff;
 }
+
 .stripe {
   display: grid;
   grid-template-columns: [left] 20px [col1] 1fr [col7] 20px [right];
 }
+
 .stripe.about {
   margin-bottom: 100px;
   margin-top: 10vh;
 }
+
 .stripe.history {
   margin-bottom: 100px;
   margin-top: 10vh;
 }
+
 .stripe.features {
   margin-top: 10vh;
   margin-bottom: 100px;
 }
+
 .stripe.contents {
   margin-top: 10vh;
   background-color: #70cf84;
 }
+
 .stripe.introduction {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.65),
-      rgba(255, 255, 255, 0.65)
-    ),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.65)),
     url("images/intro.jpg");
   background-size: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   padding: 0px;
 }
+
 div.overall {
   display: block;
   background-color: #70cf84;
@@ -342,6 +366,7 @@ div.overall {
   height: auto;
   border-radius: 8px;
 }
+
 .stripe.introduction h1 {
   font-family: "Rozha One", serif;
   text-align: center;
@@ -354,6 +379,7 @@ div.overall {
   margin-right: auto;
   letter-spacing: 5px;
 }
+
 .stripe.introduction h2 {
   text-align: center;
   font-size: 20px;
@@ -364,6 +390,7 @@ div.overall {
   margin-right: auto;
   letter-spacing: 2px;
 }
+
 .stripe.history h2 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -372,6 +399,7 @@ div.overall {
   color: #ffffff;
   font-family: "Rozha One", serif;
 }
+
 .stripe.features h2 {
   margin-top: 0px;
   margin-bottom: 4vh;
@@ -380,6 +408,7 @@ div.overall {
   color: #323232;
   font-family: "Rozha One", serif;
 }
+
 .feature.introduction h1 {
   text-align: center;
   font-size: 5rem;
@@ -387,6 +416,7 @@ div.overall {
   margin-top: 40px;
   margin-bottom: 20px;
 }
+
 .contents.introduction h1 {
   text-align: center;
   font-size: 5rem;
@@ -396,6 +426,7 @@ div.overall {
   padding-left: 200px;
   padding-right: 200px;
 }
+
 .feature_item {
   height: auto;
   padding: 0px;
@@ -403,6 +434,7 @@ div.overall {
   background-color: #dddddd;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .feature_item h3 {
   padding-top: 300px;
   padding-bottom: 20px;
@@ -417,11 +449,13 @@ div.overall {
   font-weight: 600;
   letter-spacing: 1px;
 }
+
 .feature_item button {
   width: 100%;
   border: 0px;
   padding: 0px;
 }
+
 .feature_item button a {
   display: block;
   padding: 0px;
@@ -429,41 +463,37 @@ div.overall {
   font-size: 16px;
   color: #0f1f2a;
 }
+
 .feature_item.category1 h3 {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
-    ),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)),
     url("images/care.jpg");
 }
+
 .feature_item.category2 h3 {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
-    ),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)),
     url("images/grow.jpg");
 }
+
 .feature_item.category3 h3 {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
-    ),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)),
     url("images/style.jpg");
 }
+
 .feature_item.category4 h3 {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
-    ),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)),
     url("images/species.jpg");
 }
+
 .feature_item.category5 h3 {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
-    ),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)),
     url("images/beginner.jpg");
 }
+
 div.content_item {
   display: block;
   background-color: #ffffff;
@@ -476,6 +506,7 @@ div.content_item {
   height: auto;
   border-radius: 8px;
 }
+
 .content_item h3 {
   text-align: center;
   margin-bottom: 10px;
@@ -485,6 +516,7 @@ div.content_item {
   font-weight: 300;
   letter-spacing: 1px;
 }
+
 hr {
   height: 2px;
   width: 50%;
@@ -493,6 +525,7 @@ hr {
   background-color: #f5f5f5;
   margin: auto;
 }
+
 p.content {
   text-align: center;
   margin-top: 0vh;
@@ -501,6 +534,7 @@ p.content {
   font-size: 1.125em;
   color: #222222;
 }
+
 button.content_information {
   display: block;
   margin: auto;
@@ -512,6 +546,7 @@ button.content_information {
   border: 0px;
   border-radius: 8px;
 }
+
 button.content_information a {
   text-decoration: none;
   color: #ffffff;
@@ -521,6 +556,7 @@ button.content_information a {
   letter-spacing: 1px;
   padding: 50px 20px;
 }
+
 /*======================footer========================*/
 .footer {
   padding-top: 40px;
@@ -530,15 +566,18 @@ button.content_information a {
   grid-template-columns: [col1] 1fr [col7];
   grid-gap: 0px;
 }
+
 div.footer1 {
   margin-left: auto;
   margin-right: auto;
 }
+
 div.footer2 {
   margin-top: 10px;
   margin-left: 30vw;
   margin-right: 30vw;
 }
+
 p.footer1 {
   margin-left: auto;
   margin-right: auto;
@@ -548,16 +587,19 @@ p.footer1 {
   letter-spacing: 1px;
   font-size: 18px;
 }
+
 p.footer2 {
   color: #ffffff;
   text-align: center;
   font-size: 14px;
 }
+
 img.logoend {
   display: block;
   width: 50%;
   margin: auto;
 }
+
 p.logoend {
   text-decoration: none;
   text-transform: uppercase;
@@ -569,16 +611,19 @@ p.logoend {
   color: #ffffff;
   vertical-align: middle;
 }
+
 /*======================footer========================*/
 .content_container {
   grid-column-start: col1;
   grid-column-end: col7;
 }
+
 /* copy all of these page_grid too!*/
 .content_container.page_grid {
   display: grid;
   grid-gap: 20px 0px;
 }
+
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-size: 1em;
@@ -623,46 +668,65 @@ p.logoend {
 }
 
 #top {
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #70cf84; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #70cf84;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
 }
 
 #top:hover {
-  background-color: #505050; /* Add a dark-grey background on hover */
+  background-color: #505050;
+  /* Add a dark-grey background on hover */
 }
+
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media only screen and (min-width: 1280px) {
   .stripe {
     grid-template-columns: [left] 100px [col1] 1fr [col7] 100px [right];
   }
+
   .content_container.page_grid.features {
     display: grid;
     grid-template-columns: [col1] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [col7];
     grid-gap: 40px;
   }
+
   .content_container.page_grid.contents {
     display: grid;
     grid-template-columns: [col1] 1fr [col3] 1fr [col5] 1fr [col7];
     grid-gap: 40px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1279px) {
   .menubar ul {
     display: none;
   }
+
   .topnav {
     display: block;
   }
+
   .topnav a {
     float: left;
     display: block;
@@ -672,56 +736,70 @@ p.logoend {
     text-decoration: none;
     font-size: 17px;
   }
+
   .topnav a:not(:first-child) {
     display: none;
   }
+
   .topnav a.icon1 {
     float: right;
     display: block;
   }
+
   .topnav a.icon2 {
     float: right;
     display: block;
   }
+
   .topnav.responsive {
     position: relative;
   }
+
   .topnav.responsive .icon1 {
     position: absolute;
     right: 6.5vw;
     top: 0;
   }
+
   .topnav.responsive .icon2 {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
+
   .stripe.introduction {
     background-size: 150%;
   }
+
   .stripe.introduction h1 {
     font-size: 3.5em;
   }
+
   .stripe.introduction h2 {
     font-size: 18px;
   }
+
   div.content_item {
     margin-top: 5vh;
     margin-bottom: 5vh;
   }
 }
+
 @media (min-width: 375px) and (max-width: 767px) {
   .menubar ul {
     display: none;
   }
+
   .topnav {
     display: block;
   }
+
   .topnav a {
     float: left;
     display: block;
@@ -731,66 +809,83 @@ p.logoend {
     text-decoration: none;
     font-size: 17px;
   }
+
   .topnav a:not(:first-child) {
     display: none;
   }
+
   .topnav a.icon1 {
     float: right;
     display: block;
   }
+
   .topnav a.icon2 {
     float: right;
     display: block;
   }
+
   .topnav.responsive {
     position: relative;
   }
+
   .topnav.responsive .icon1 {
     position: absolute;
     right: 12vw;
     top: 0;
   }
+
   .topnav.responsive .icon2 {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
+
   .stripe.introduction {
     background-size: 300%;
   }
+
   .stripe.introduction h1 {
     font-size: 2em;
     margin-top: 20vh;
   }
+
   .stripe.introduction h2 {
     font-size: 16px;
   }
+
   p.intro_text {
     font-size: 14px;
   }
+
   p.overall {
     font-size: 1em;
   }
+
   p.overallblockquote {
     font-size: 1em;
   }
+
   div.content_item {
     margin-top: 5vh;
     margin-bottom: 5vh;
   }
 }
+
 @media only screen and (max-width: 374px) {
   .menubar ul {
     display: none;
   }
+
   .topnav {
     display: block;
   }
+
   .topnav a {
     float: left;
     display: block;
@@ -800,63 +895,78 @@ p.logoend {
     text-decoration: none;
     font-size: 17px;
   }
+
   .topnav a:not(:first-child) {
     display: none;
   }
+
   .topnav a.icon1 {
     float: right;
     display: block;
   }
+
   .topnav a.icon2 {
     float: right;
     display: block;
   }
+
   .topnav.responsive {
     position: relative;
   }
+
   .topnav.responsive .icon1 {
     position: absolute;
     right: 12vw;
     top: 0;
   }
+
   .topnav.responsive .icon2 {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
+
   .stripe.introduction {
     background-size: 300%;
   }
+
   .stripe.introduction h1 {
     font-size: 2em;
     margin-top: 20vh;
   }
+
   .stripe.introduction h2 {
     font-size: 16px;
   }
+
   p.intro_text {
     font-size: 14px;
   }
+
   p.overall {
     font-size: 1em;
   }
+
   p.overallblockquote {
     font-size: 1em;
   }
+
   div.content_item {
     margin-top: 5vh;
     margin-bottom: 5vh;
   }
 }
+
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -867,6 +977,7 @@ p.logoend {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {

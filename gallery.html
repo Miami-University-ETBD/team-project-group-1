@@ -15,49 +15,51 @@
   <link href='https://fonts.googleapis.com/css?family=Rozha One' rel='stylesheet'>
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="gallery.css">
-  <script src="java.js" defer ></script>
+  <script src="java.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <meta name="theme-color" content="#fafafa">
   <!-- Fotorama from CDNJS, 19 KB -->
-  <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
   <script>
 
-  $(document).ready(function() {
-    $("#image_list a").click(function(evt) {
-      evt.preventDefault();
-      var imgSrc = $(this).attr("href");
-      var imgCaption = $(this).attr("title");
-      $("#image").fadeOut(500, function() {
-        $("#image").attr("src", imgSrc);
-        $("#caption").text(imgCaption);
-        $("#image").fadeIn(500);
+    $(document).ready(function () {
+      $("#image_list a").click(function (evt) {
+        evt.preventDefault();
+        var imgSrc = $(this).attr("href");
+        var imgCaption = $(this).attr("title");
+        $("#image").fadeOut(500, function () {
+          $("#image").attr("src", imgSrc);
+          $("#caption").text(imgCaption);
+          $("#image").fadeIn(500);
+        });
       });
     });
-  });
   </script>
 </head>
 
 <body>
   <nav class="stripe menubar">
-      <div class="content_container">
-        <ul>
-          <li style="float: left;"><img class="logo" src="images/logo.png"><span><a class="logo" href="index.html">Bonsai</a></span></li>
-          <li><a href="information.html">INFORMATION</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="calculator.html">CALCULATOR</a></li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li><a href="contact.html">CONTACT US</a></li>
-          <li></li>
-          <li></li>
-          <li>
-            <input type="text" placeholder="Search..">
-          </li>
-        </ul>
+    <div class="content_container">
+      <ul>
+        <li style="float: left;"><img class="logo" src="images/logo.png"><span><a class="logo"
+              href="index.html">Bonsai</a></span></li>
+        <li><a href="information.html">INFORMATION</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="calculator.html">CALCULATOR</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li></li>
+        <li></li>
+        <li>
+          <input type="text" placeholder="Search..">
+        </li>
+      </ul>
       </ul>
       <div class="topnav" id="myTopnav">
-        <img class="logo" src="images/logo.png" style="float: left;"><span><a class="logo" href="index.html">Bonsai</a></span>
+        <img class="logo" src="images/logo.png" style="float: left;"><span><a class="logo"
+            href="index.html">Bonsai</a></span>
         <a href="information.html">INFORMATION</a>
         <a href="faq.html">FAQ</a>
         <a href="calculator.html">CALCULATOR</a>
@@ -65,69 +67,62 @@
         <a href="contact.html">CONTACT US</a>
         <a href="javascript:void(0);" class="icon2" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         <a class="icon1"><i class="fa fa-search"></i></a>
-      </ul>
+        </ul>
       </div>
-</nav>
+  </nav>
 
-<div class="stripe introduction">
-  <div class="content_container">
-  <h1>Gallery</h1>
-  <h2>Enjoy the beauty of Bonsai! We have curated a gallery with different types of Bonsai and included their names.</h2>
-</div>
-</div>
+  <div class="stripe introduction">
+    <div class="content_container">
+      <h1>Gallery</h1>
+      <h2>Enjoy the beauty of Bonsai! We have curated a gallery with different types of Bonsai and included their names.
+      </h2>
+    </div>
+  </div>
 
-<div class="stripe">
-<div class="content_container">
-<section class="gallery" id="gallery">
-    <ul class="image_list" id="image_list">
-        <li class="image_list"><a href="images/bonsai-gallery-1.png"  title="Ficus Bonsai" id="first_link">
-          <img src="images/bonsai-gallery-1.png" class="image_small" alt=""></a></li>
-        <li class="image_list"><a href="images/bonsai-gallery-2.png" title="Japanese Maple Trees">
-          <img src="images/bonsai-gallery-2.png" class="image_small" alt=""></a></li>
-        <li class="image_list"><a href="images/bonsai-gallery-3.png" title="Chinese Elm">
-          <img src="images/bonsai-gallery-3.png" class="image_small" alt=""></a></li>
-        <li class="image_list"><a href="images/bonsai-gallery-4.png" title="Satsuki Azalea">
-          <img src="images/bonsai-gallery-4.png" class="image_small" alt=""></a></li>
-        <li class="image_list"><a href="images/bonsai-gallery-5.png" title="Birch Bonsai Trees">
-          <img src="images/bonsai-gallery-5.png" class="image_small" alt=""></a></li>
-        <li class="image_list"><a href="images/bonsai-gallery-6.png" title="Juniper Bonsai">
-          <img src="images/bonsai-gallery-6.png" class="image_small" alt=""></a></li>
-        <li class="image_list"><a href="images/bonsai-gallery-7.png" title="Pine Bonsai Trees">
-        <img src="images/bonsai-gallery-7.png" class="image_small" alt=""></a></li>
-    </ul>
-    <h2 id="caption">Types Of Bonsai</h2>         
-    <p><img src="images/bonsai-gallery-1.png" class="image_large" alt="" id="image"></p>
-</section>	
-</div>
-</div>
+  <div class="stripe">
+    <div class="content_container">
+      <section class="gallery" id="gallery">
+        <ul class="image_list" id="image_list">
+          <li class="image_list"><a href="images/bonsai-gallery-1.png" title="Ficus Bonsai" id="first_link">
+              <img src="images/bonsai-gallery-1.png" class="image_small" alt=""></a></li>
+          <li class="image_list"><a href="images/bonsai-gallery-2.png" title="Japanese Maple Trees">
+              <img src="images/bonsai-gallery-2.png" class="image_small" alt=""></a></li>
+          <li class="image_list"><a href="images/bonsai-gallery-3.png" title="Chinese Elm">
+              <img src="images/bonsai-gallery-3.png" class="image_small" alt=""></a></li>
+          <li class="image_list"><a href="images/bonsai-gallery-4.png" title="Satsuki Azalea">
+              <img src="images/bonsai-gallery-4.png" class="image_small" alt=""></a></li>
+          <li class="image_list"><a href="images/bonsai-gallery-5.png" title="Birch Bonsai Trees">
+              <img src="images/bonsai-gallery-5.png" class="image_small" alt=""></a></li>
+          <li class="image_list"><a href="images/bonsai-gallery-6.png" title="Juniper Bonsai">
+              <img src="images/bonsai-gallery-6.png" class="image_small" alt=""></a></li>
+          <li class="image_list"><a href="images/bonsai-gallery-7.png" title="Pine Bonsai Trees">
+              <img src="images/bonsai-gallery-7.png" class="image_small" alt=""></a></li>
+        </ul>
+        <h2 id="caption">Types Of Bonsai</h2>
+        <p><img src="images/bonsai-gallery-1.png" class="image_large" alt="" id="image"></p>
+      </section>
+    </div>
+  </div>
 
-<!-- New slideshow-->
-<div class ="stripe slideshow">
-  <div class="content_container">
-  <h2>Even more bonsai photos to inspire you:</h2>
-  <div class="fotorama"
-  data-width="100%"
-  data-height="100%"
-  data-nav="thumbs"
-  data-transition="crossfade"
-  data-autoplay="2000"
-  data-navposition="top"
-  data-loop="true"
-  data-click="true"
-  data-swipe="true">
-  <a href="images/1.jpeg"><img src="images/1.jpeg"></a>
-  <a href="images/2.jpeg"><img src="images/2.jpeg"></a>
-  <a href="images/3.jpeg"><img src="images/3.jpeg"></a>
-  <a href="images/4.jpeg"><img src="images/4.jpeg"></a>
-  <a href="images/5.jpeg"><img src="images/5.jpeg"></a>
-</div>
-</div>
-</div> 
+  <!-- New slideshow-->
+  <div class="stripe slideshow">
+    <div class="content_container">
+      <h2>Even more bonsai photos to inspire you:</h2>
+      <div class="fotorama" data-width="100%" data-height="100%" data-nav="thumbs" data-transition="crossfade"
+        data-autoplay="2000" data-navposition="top" data-loop="true" data-click="true" data-swipe="true">
+        <a href="images/1.jpeg"><img src="images/1.jpeg"></a>
+        <a href="images/2.jpeg"><img src="images/2.jpeg"></a>
+        <a href="images/3.jpeg"><img src="images/3.jpeg"></a>
+        <a href="images/4.jpeg"><img src="images/4.jpeg"></a>
+        <a href="images/5.jpeg"><img src="images/5.jpeg"></a>
+      </div>
+    </div>
+  </div>
 
-<!-- top button -->
-<button onclick="topFunction()" id="top" title="Go to top">Top</button>
+  <!-- top button -->
+  <button onclick="topFunction()" id="top" title="Go to top">Top</button>
 
-<!-- footer -->
+  <!-- footer -->
   <footer class="footer">
     <div class="footer1">
       <p class="logoend" href="home.html"><a>Bonsai</a></p>
@@ -136,7 +131,7 @@
     <div class="footer2">
       <p class="footer2">
         Written by Kaia Nguyen, Khanh Mai, Ngoc Uong and Rachel Farver. <br>
-        At Miami University, Oxford, Ohio, USA. <br> 
+        At Miami University, Oxford, Ohio, USA. <br>
         &copy; Art of Bonsai, 2023
       </p>
     </div>

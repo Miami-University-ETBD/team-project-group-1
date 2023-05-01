@@ -6,17 +6,17 @@ body {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+
 .stripe.introduction {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.65),
-      rgba(255, 255, 255, 0.65)
-    ),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.65)),
     url("images/intro.jpg");
   background-size: 100%;
   height: 80vh;
   background-repeat: no-repeat;
   padding: 0px;
 }
+
 .stripe.introduction h1 {
   font-family: "Rozha One", serif;
   text-align: center;
@@ -40,6 +40,7 @@ body {
   margin-right: auto;
   letter-spacing: 2px;
 }
+
 h3 {
   text-align: center;
   font-size: 20px;
@@ -55,10 +56,12 @@ h3 {
   display: grid;
   grid-template-columns: [left] 20px [col1] 1fr [col7] 20px [right];
 }
+
 .content_container {
   grid-column-start: col1;
   grid-column-end: col7;
 }
+
 /*======================menubar========================*/
 .menubar {
   background-color: #ffffff;
@@ -70,6 +73,7 @@ h3 {
   z-index: 9999;
   box-shadow: 0px 12px 24px rgb(0 0 0 / 10%);
 }
+
 .menubar ul {
   list-style-type: none;
   padding: 0;
@@ -78,11 +82,13 @@ h3 {
   display: flex;
   justify-content: space-around;
 }
+
 .menubar ul li {
   display: flex;
   vertical-align: middle;
   align-items: center;
 }
+
 .menubar a {
   text-decoration: none;
   letter-spacing: 1px;
@@ -92,13 +98,16 @@ h3 {
   color: #505050 !important;
   vertical-align: middle;
 }
+
 .menubar a:hover {
   background-color: grey;
 }
+
 img.logo {
   width: 50px;
   height: fit-content;
 }
+
 a.logo {
   text-decoration: none;
   text-transform: uppercase;
@@ -108,6 +117,7 @@ a.logo {
   color: #ffffff;
   vertical-align: middle;
 }
+
 .content_container input[type="text"] {
   float: right;
   padding: 6px;
@@ -119,25 +129,30 @@ a.logo {
   border-left: 0px;
   font-size: 17px;
 }
+
 ::placeholder {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
 }
+
 .topnav {
   display: none;
 }
+
 /*======================menubar========================*/
 /*======================footer========================*/
 div.footer1 {
   margin-left: auto;
   margin-right: auto;
 }
+
 div.footer2 {
   margin-top: 10px;
   margin-left: 30vw;
   margin-right: 30vw;
 }
+
 p.footer1 {
   margin-left: auto;
   margin-right: auto;
@@ -147,16 +162,19 @@ p.footer1 {
   letter-spacing: 1px;
   font-size: 18px;
 }
+
 p.footer2 {
   color: #ffffff;
   text-align: center;
   font-size: 14px;
 }
+
 img.logoend {
   display: block;
   width: 50%;
   margin: auto;
 }
+
 p.logoend {
   text-decoration: none;
   text-transform: uppercase;
@@ -168,6 +186,7 @@ p.logoend {
   color: #ffffff;
   vertical-align: middle;
 }
+
 .footer {
   padding-top: 40px;
   padding-bottom: 20px;
@@ -176,24 +195,38 @@ p.logoend {
   grid-template-columns: [col1] 1fr [col7];
   grid-gap: 0px;
 }
+
 /*======================footer========================*/
 #top {
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #70cf84; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #70cf84;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
 }
 
 #top:hover {
-  background-color: #505050; /* Add a dark-grey background on hover */
+  background-color: #505050;
+  /* Add a dark-grey background on hover */
 }
 
 /*======================Form========================*/
@@ -206,14 +239,17 @@ p.logoend {
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
+
 form {
   display: flex;
   flex-direction: column;
 }
+
 label {
   margin-top: 10px;
   font-weight: bold;
 }
+
 input[type="textform"],
 select {
   border: none;
@@ -228,6 +264,7 @@ select {
   min-height: 40px;
   font-family: "Lato", sans-serif;
 }
+
 input[type="button"] {
   background-color: #4caf50;
   color: white;
@@ -240,18 +277,22 @@ input[type="button"] {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   margin-top: 15px;
 }
+
 input[type="button"]:hover {
   background-color: #3e8e41;
 }
+
 .required:after {
   content: " *";
   color: #f00;
 }
+
 .error {
   color: #f00;
   font-size: 14px;
   margin-top: 5px;
 }
+
 .success {
   color: #4caf50;
   font-size: 14px;
@@ -264,28 +305,34 @@ div.form-container {
   margin-left: 5vw;
   margin-right: 5vw;
 }
+
 @media only screen and (min-width: 1280px) {
   .stripe {
     grid-template-columns: [left] 100px [col1] 1fr [col7] 100px [right];
   }
+
   .content_container.page_grid.features {
     display: grid;
     grid-template-columns: [col1] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [col7];
     grid-gap: 40px;
   }
+
   .content_container.page_grid.contents {
     display: grid;
     grid-template-columns: [col1] 1fr [col3] 1fr [col5] 1fr [col7];
     grid-gap: 40px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1279px) {
   .menubar ul {
     display: none;
   }
+
   .topnav {
     display: block;
   }
+
   .topnav a {
     float: left;
     display: block;
@@ -295,61 +342,76 @@ div.form-container {
     text-decoration: none;
     font-size: 17px;
   }
+
   .topnav a:not(:first-child) {
     display: none;
   }
+
   .topnav a.icon1 {
     float: right;
     display: block;
   }
+
   .topnav a.icon2 {
     float: right;
     display: block;
   }
+
   .topnav.responsive {
     position: relative;
   }
+
   .topnav.responsive .icon1 {
     position: absolute;
     right: 6.5vw;
     top: 0;
   }
+
   .topnav.responsive .icon2 {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
+
   .stripe.introduction {
     background-size: 120%;
   }
+
   .stripe.introduction h1 {
     font-size: 3.5em;
   }
+
   .stripe.introduction h2 {
     font-size: 18px;
     margin-top: 5vh;
     margin-left: 5vw;
     margin-right: 5vw;
   }
+
   div.form-container {
     margin-top: 0vh;
   }
+
   h3 {
     margin-top: 0vh;
   }
 }
+
 @media (min-width: 375px) and (max-width: 767px) {
   .menubar ul {
     display: none;
   }
+
   .topnav {
     display: block;
   }
+
   .topnav a {
     float: left;
     display: block;
@@ -359,51 +421,63 @@ div.form-container {
     text-decoration: none;
     font-size: 17px;
   }
+
   .topnav a:not(:first-child) {
     display: none;
   }
+
   .topnav a.icon1 {
     float: right;
     display: block;
   }
+
   .topnav a.icon2 {
     float: right;
     display: block;
   }
+
   .topnav.responsive {
     position: relative;
   }
+
   .topnav.responsive .icon1 {
     position: absolute;
     right: 12vw;
     top: 0;
   }
+
   .topnav.responsive .icon2 {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
+
   .stripe.introduction {
     background-size: 250%;
   }
+
   .stripe.introduction h1 {
     font-size: 2em;
     margin-top: 20vh;
   }
+
   .stripe.introduction h2 {
     font-size: 16px;
     margin-top: 5vh;
     margin-left: 5vw;
     margin-right: 5vw;
   }
+
   div.form-container {
     margin-top: 0vh;
   }
+
   h3 {
     margin-top: 0vh;
     margin-left: 0vw;
@@ -411,13 +485,16 @@ div.form-container {
     font-size: 16px;
   }
 }
+
 @media only screen and (max-width: 374px) {
   .menubar ul {
     display: none;
   }
+
   .topnav {
     display: block;
   }
+
   .topnav a {
     float: left;
     display: block;
@@ -427,51 +504,63 @@ div.form-container {
     text-decoration: none;
     font-size: 17px;
   }
+
   .topnav a:not(:first-child) {
     display: none;
   }
+
   .topnav a.icon1 {
     float: right;
     display: block;
   }
+
   .topnav a.icon2 {
     float: right;
     display: block;
   }
+
   .topnav.responsive {
     position: relative;
   }
+
   .topnav.responsive .icon1 {
     position: absolute;
     right: 12vw;
     top: 0;
   }
+
   .topnav.responsive .icon2 {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
+
   .stripe.introduction {
     background-size: 250%;
   }
+
   .stripe.introduction h1 {
     font-size: 2em;
     margin-top: 20vh;
   }
+
   .stripe.introduction h2 {
     font-size: 16px;
     margin-top: 5vh;
     margin-left: 5vw;
     margin-right: 5vw;
   }
+
   div.form-container {
     margin-top: 0vh;
   }
+
   h3 {
     margin-top: 0vh;
     margin-left: 0vw;

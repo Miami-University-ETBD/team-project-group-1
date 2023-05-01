@@ -15,88 +15,95 @@
   <link href='https://fonts.googleapis.com/css?family=Rozha One' rel='stylesheet'>
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="calculator.css">
-  <script src="java.js" defer ></script>
+  <script src="java.js" defer></script>
   <meta name="theme-color" content="#fafafa">
   <script>
-  let calculateDbh = function () {
-    var diameter = parseInt(document.getElementById("circumference").value);
-    var growth_factor = parseFloat(document.getElementById("type").value);
-    let stem = parseInt(document.getElementById("stem").value);
-    let unit = parseInt(document.getElementById("unit").value);
-    let result; 
-    if (unit == "1") { 
-      if (stem == "1"){
-        diameter = diameter/3.141592;
-        result = diameter * growth_factor;
-        document.getElementById("total").value = "The estimated age is " + result.toFixed(0) + " years old";}
-      else {
-        result = diameter * growth_factor;
-        document.getElementById("total").value = "The estimated age is " + result.toFixed(0) + " years old";
-      }
-    }
-    else {
-      diameter = diameter/2.54; 
-      if (stem == "1"){
-        diameter = diameter/3.141592;
-        result = diameter * growth_factor;
-        document.getElementById("total").value = "The estimated age is " + result.toFixed(0) + " years old";}
-      else {
-        result = diameter * growth_factor;
-        document.getElementById("total").value = "The estimated age is " + result.toFixed(0) + " years old";
-      }
-    }
+    let calculateDbh = function () {
+      var diameter = parseInt(document.getElementById("circumference").value);
+      var growth_factor = parseFloat(document.getElementById("type").value);
+      let stem = parseInt(document.getElementById("stem").value);
+      let unit = parseInt(document.getElementById("unit").value);
+      let result;
+      if (unit == "1") {
+        if (stem == "1") {
+          diameter = diameter / 3.141592;
+          result = diameter * growth_factor;
+          document.getElementById("total").value = "The estimated age is " + result.toFixed(0) + " years old";
         }
+        else {
+          result = diameter * growth_factor;
+          document.getElementById("total").value = "The estimated age is " + result.toFixed(0) + " years old";
+        }
+      }
+      else {
+        diameter = diameter / 2.54;
+        if (stem == "1") {
+          diameter = diameter / 3.141592;
+          result = diameter * growth_factor;
+          document.getElementById("total").value = "The estimated age is " + result.toFixed(0) + " years old";
+        }
+        else {
+          result = diameter * growth_factor;
+          document.getElementById("total").value = "The estimated age is " + result.toFixed(0) + " years old";
+        }
+      }
+    }
     window.onload = function () {
       document.getElementById("calculate").onclick = calculateDbh;
-        }   
-   </script>
+    }   
+  </script>
 </head>
 
 <body>
   <nav class="stripe menubar">
-      <div class="content_container">
-        <ul>
-          <li style="float: left;"><img class="logo" src="images/logo.png"><span><a class="logo" href="index.html">Bonsai</a></span></li>
-          <li><a href="information.html">INFORMATION</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="calculator.html">CALCULATOR</a></li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li><a href="contact.html">CONTACT US</a></li>
-          <li></li>
-          <li></li>
-          <li>
-            <input type="text" placeholder="Search..">
-          </li>
-        </ul>
-        <div class="topnav" id="myTopnav">
-          <img class="logo" src="images/logo.png" style="float: left;"><span><a class="logo" href="index.html">Bonsai</a></span>
-          <a href="information.html">INFORMATION</a>
-          <a href="faq.html">FAQ</a>
-          <a href="calculator.html">CALCULATOR</a>
-          <a href="gallery.html">GALLERY</a>
-          <a href="contact.html">CONTACT US</a>
-          <a href="javascript:void(0);" class="icon2" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-          <a class="icon1"><i class="fa fa-search"></i></a>
+    <div class="content_container">
+      <ul>
+        <li style="float: left;"><img class="logo" src="images/logo.png"><span><a class="logo"
+              href="index.html">Bonsai</a></span></li>
+        <li><a href="information.html">INFORMATION</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="calculator.html">CALCULATOR</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li></li>
+        <li></li>
+        <li>
+          <input type="text" placeholder="Search..">
+        </li>
+      </ul>
+      <div class="topnav" id="myTopnav">
+        <img class="logo" src="images/logo.png" style="float: left;"><span><a class="logo"
+            href="index.html">Bonsai</a></span>
+        <a href="information.html">INFORMATION</a>
+        <a href="faq.html">FAQ</a>
+        <a href="calculator.html">CALCULATOR</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT US</a>
+        <a href="javascript:void(0);" class="icon2" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <a class="icon1"><i class="fa fa-search"></i></a>
         </ul>
       </div>
-      </div>
-</nav>
+    </div>
+  </nav>
 
   <div class="stripe introduction">
     <div class="content_container">
-    <h1>Tree Age Calculator</h1>
-    <h2>It can be very difficult to calculate the age of a tree if you don't know when it was planted. However, it is possible to estimate the tree's age through an approximation technique that is based on the circumference of its trunk.
-     </h2>
-  </div>
+      <h1>Tree Age Calculator</h1>
+      <h2>It can be very difficult to calculate the age of a tree if you don't know when it was planted. However, it is
+        possible to estimate the tree's age through an approximation technique that is based on the circumference of its
+        trunk.
+      </h2>
+    </div>
   </div>
 
- <!-- form input -->
-    <div class="stripe form";>
-      <div class="content_container">
-        <div class="form-container">
-        <h3>Appreciate the age of the tree. Please select the tree type and specify the stem circumference / diameter in cm or inch. The stem circumference is measured at a height of 1.00 m (3.3 ft.) to 1.50 m (4.5 ft.).</h1>
-        <form>
-          <label for="type"><b>Tree Type</b></label>
+  <!-- form input -->
+  <div class="stripe form" ;>
+    <div class="content_container">
+      <div class="form-container">
+        <h3>Appreciate the age of the tree. Please select the tree type and specify the stem circumference / diameter in
+          cm or inch. The stem circumference is measured at a height of 1.00 m (3.3 ft.) to 1.50 m (4.5 ft.).</h1>
+          <form>
+            <label for="type"><b>Tree Type</b></label>
             <select id="type">
               <option value="3.6">Alder</option>
               <option value="4.4">American Hornbeam</option>
@@ -133,34 +140,34 @@
               <option value="2.9">Willow</option>
               <option value="11.2">Yew, Common Yew</option>
             </select>
-            <br />  
+            <br />
             <label for="stem"><b>Circumference or diameter</b></label>
             <select id="stem">
               <option value="1">Circumference</option>
               <option value="2">Diameter</option>
             </select>
-          <label for="amount"><b>Circumference or diameter at Breast Height (CBH)</b></label>
-          <input type="textform" id="circumference" />
-          <br />
-          <label for="unit"><b>In inch or cm</b></label>
-          <select id="unit">
-            <option value="1">Inch</option>
-            <option value="2">Cm</option>
-          </select>
-          <br /> 
-          <label for="total">Result:</label>
-          <input type="textform" id="total" disabled />
-          <br />
-          <input type="button" id="calculate" value="Calculate"/>		
-        </form>
+            <label for="amount"><b>Circumference or diameter at Breast Height (CBH)</b></label>
+            <input type="textform" id="circumference" />
+            <br />
+            <label for="unit"><b>In inch or cm</b></label>
+            <select id="unit">
+              <option value="1">Inch</option>
+              <option value="2">Cm</option>
+            </select>
+            <br />
+            <label for="total">Result:</label>
+            <input type="textform" id="total" disabled />
+            <br />
+            <input type="button" id="calculate" value="Calculate" />
+          </form>
       </div>
-      </div>
-      </div>
+    </div>
+  </div>
 
-<!-- top button -->
-<button onclick="topFunction()" id="top" title="Go to top">Top</button>
+  <!-- top button -->
+  <button onclick="topFunction()" id="top" title="Go to top">Top</button>
 
-<!-- footer -->
+  <!-- footer -->
   <footer class="footer">
     <div class="footer1">
       <p class="logoend" href="home.html"><a>Bonsai</a></p>
@@ -169,7 +176,7 @@
     <div class="footer2">
       <p class="footer2">
         Written by Kaia Nguyen, Khanh Mai, Ngoc Uong and Rachel Farver. <br>
-        At Miami University, Oxford, Ohio, USA. <br> 
+        At Miami University, Oxford, Ohio, USA. <br>
         &copy; Art of Bonsai, 2023
       </p>
     </div>
