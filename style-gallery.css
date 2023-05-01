@@ -194,6 +194,9 @@ html {
     text-transform: uppercase;
     font-size: 16px;
   }
+  .topnav {
+    display: none;
+    }
   /*======================herobanner========================*/
   .stripe {
     display: grid;
