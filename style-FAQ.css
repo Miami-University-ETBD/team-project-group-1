@@ -43,7 +43,7 @@ body {
     margin-top: 0vh;
     margin-bottom: 20vh; 
   }
-  button.accordion {
+  h3.accordion {
     background-color: #70cf84;
     color:  #ffffff;
     cursor: pointer;
@@ -73,14 +73,14 @@ body {
   overflow: hidden;
 }
 
-  button.accordion::after {
+  h3.accordion::after {
     content: "\002B"; 
     font-size: 1.5em;
     float: right;
     margin-left: 8px;
   }
   
-  button.accordion.active::after {
+  h3.accordion.active::after {
     content: "\2212"; 
     color:white!important;
   }
