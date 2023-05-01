@@ -231,6 +231,9 @@ html {
     margin-right: auto;
     letter-spacing: 2px; 
   }
+  .topnav {
+    display: none;
+    }
 /*======================Form========================*/
 .container {
   background-color: #ffffff;
