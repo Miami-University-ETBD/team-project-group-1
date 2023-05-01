@@ -39,6 +39,10 @@ body {
   .topnav {
     display: none;
     }
+    section.button-containter {
+      margin-top:3em;
+      margin-right:4em;
+    }
   section.button-containter {
     margin-top: 20vh;
     margin-bottom: 20vh; 
