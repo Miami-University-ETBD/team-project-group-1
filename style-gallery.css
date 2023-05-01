@@ -463,30 +463,15 @@ header {
     height: 160px;
    }
 
-nav ul.image_list {
-    margin: 0px;
-    padding: 5px 0px 5px 30px;
+ul.image_list {
+	padding-left: 0px;
+  padding-right: 0px;
+  padding: 5px 0px 5px 30px;
+  margin-left: auto;
+  margin-right: auto; 
 }
 
-nav li.image_list {
-    display: inline;
-    margin-right: 40px;}
-
-nav li a {
-    color: #ffffff;}
-
-a {
-    text-decoration: none;
-} 
-
-nav li a:hover, nav li a.current {
-    color: #000000;}
-
-#image_list {
-	padding-left: 60px;
-}
-
-li {
+li.image_list {
     padding-right: 10px;
     display: inline;
 }
