@@ -233,6 +233,14 @@ body {
     color: #ffffff;
     vertical-align: middle;
   }
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: [col1] 1fr [col7];
+    grid-gap: 0px;
+  }
   /*======================footer========================*/
   #top {
     position: fixed; /* Fixed/sticky position */
@@ -262,46 +270,170 @@ body {
       grid-template-columns: [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6];
       grid-gap: 40px;
     }
-    .footer {
-      padding-top: 40px;
-      padding-bottom: 20px;
-      background-color: #000000;
-      display: grid;
-      grid-template-columns: [col1] 1fr [col7];
-      grid-gap: 0px;
-    }
-    .flex-container {
-      display: flex;
-      flex-direction: row;
-    }
-    
-    .flex-item-left {
-      padding: 0px;
-      flex: 50%;
-      margin-left: 5vw;
-    }
-    
-    .flex-item-right {
-      padding: 0px;
-      flex: 50%;
-      margin-right: 5vw;
-    }
   }
-  @media (max-width: 800px) {
-    .flex-item-right, .flex-item-left {
-      flex-direction: column;
-      margin: 0px;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    .menubar ul {
+      display: none;
     }
-    .content_container input[type=text] {
+    .topnav {
+      display: block;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #505050;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon1 {
+      float: right;
+      display: block;
+    }
+    .topnav a.icon2 {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon1 {
+      position: absolute;
+      right: 6.5vw;
+      top: 0;
+    }
+    .topnav.responsive .icon2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
       float: none;
       display: block;
       text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
     }
-    
-    .content_container input[type=text] {
-      border: 1px solid #ccc;  
+    .stripe.introduction {
+      background-size: 150%;
+      height: 100vh;
     }
-  }
+    .stripe.introduction h1 {
+      font-size: 3.5em;
+    }
+    .stripe.introduction h2 {
+      font-size: 18px;
+      margin-top: 5vh;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+    }
+    @media (min-width: 375px) and (max-width: 767px) {
+    .menubar ul {
+      display: none;
+    }
+    .topnav {
+      display: block;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #505050;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon1 {
+      float: right;
+      display: block;
+    }
+    .topnav a.icon2 {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon1 {
+      position: absolute;
+      right: 12vw;
+      top: 0;
+    }
+    .topnav.responsive .icon2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .stripe.introduction {
+      background-size: 300%;
+      height: 100vh;
+    }
+    .stripe.introduction h1 {
+      font-size: 2em;
+      margin-top: 20vh;
+    }
+    .stripe.introduction h2 {
+      font-size: 16px;
+      margin-top: 5vh;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+    }
+    @media only screen and (max-width: 374px) {
+    .menubar ul {
+      display: none;
+    }
+    .topnav {
+      display: block;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #505050;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon1 {
+      float: right;
+      display: block;
+    }
+    .topnav a.icon2 {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon1 {
+      position: absolute;
+      right: 12vw;
+      top: 0;
+    }
+    .topnav.responsive .icon2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .stripe.introduction {
+      background-size: 300%;
+    }
+    .stripe.introduction h1 {
+      font-size: 2em;
+      margin-top: 20vh;
+    }
+    .stripe.introduction h2 {
+      font-size: 16px;
+      margin-top: 5vh;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+    }
