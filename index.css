@@ -4,7 +4,6 @@ html {
   line-height: 1.4;
 }
 
-
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -139,7 +138,7 @@ textarea {
 /*===================typography========================*/
 body {
   background-color: #ffffff;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   margin-block-start: 0 !important;
   margin-block-end: 0 !important;
   margin-left: 0 !important;
@@ -186,7 +185,6 @@ body {
 img.logo {
   width: 50px;
   height: fit-content;
-
 }
 a.logo {
   text-decoration: none;
@@ -197,7 +195,7 @@ a.logo {
   color: #ffffff;
   vertical-align: middle;
 }
-.content_container input[type=text] {
+.content_container input[type="text"] {
   float: right;
   padding: 6px;
   margin-top: 0px;
@@ -205,7 +203,7 @@ a.logo {
   border-bottom: 1px solid #505050;
   border-top: 0px;
   border-right: 0px;
-  border-left: 0px; 
+  border-left: 0px;
   font-size: 17px;
 }
 ::placeholder {
@@ -222,60 +220,60 @@ button.learnmore {
   display: block;
   margin-top: 5vh;
   margin-left: auto;
-  margin-right: auto; 
-  padding-top: 20px; 
+  margin-right: auto;
+  padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #70CF84;
+  background-color: #70cf84;
   background-repeat: no-repeat;
-  border: 0px; 
-  border-radius: 8px; 
+  border: 0px;
+  border-radius: 8px;
 }
 button.learnmore a {
-  text-decoration: none; 
+  text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 1em; 
-  font-weight: 600; 
-  letter-spacing: 1px; 
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
   padding: 50px 20px;
 }
 button.information {
   display: block;
   margin: auto;
   margin-top: 5vh;
-  padding-top: 20px; 
-  padding-bottom: 20px; 
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #ffffff;
   background-repeat: no-repeat;
-  border: 0px; 
-  border-radius: 8px; 
+  border: 0px;
+  border-radius: 8px;
 }
 button.information a {
-  text-decoration: none; 
+  text-decoration: none;
   color: #323232;
   text-transform: uppercase;
-  font-size: 1em;  
-  font-weight: 600; 
-  letter-spacing: 1px; 
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
   padding: 50px 20px;
 }
 button.overlay {
   display: block;
   margin-top: 20px;
-  padding-top: 20px; 
-  padding-bottom: 20px; 
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: transparent;
   background-repeat: no-repeat;
-  border: 2px solid #323232; 
+  border: 2px solid #323232;
   cursor: pointer;
 }
 button.overlay a {
-  text-decoration: none; 
+  text-decoration: none;
   color: #323232;
   text-transform: uppercase;
-  font-size: 16px; 
-  font-weight: 600; 
-  letter-spacing: 1px; 
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
   padding: 20px;
 }
 p.intro_text {
@@ -321,27 +319,31 @@ p.overallblockquote {
 }
 .stripe.contents {
   margin-top: 10vh;
-  background-color: #70CF84; 
+  background-color: #70cf84;
 }
 .stripe.introduction {
-  background-image: linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)), url('images/intro.jpg');
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.65)
+    ),
+    url("images/intro.jpg");
   background-size: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   padding: 0px;
 }
 div.overall {
-  display: block; 
-  background-color: #70CF84;
+  display: block;
+  background-color: #70cf84;
   padding-top: 10vh;
-  padding-bottom: 10vh; 
+  padding-bottom: 10vh;
   padding-left: 10vw;
   padding-right: 10vw;
   height: auto;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 .stripe.introduction h1 {
-  font-family: 'Rozha One',serif;
+  font-family: "Rozha One", serif;
   text-align: center;
   font-size: 4.5em;
   font-weight: 100;
@@ -350,7 +352,7 @@ div.overall {
   margin-bottom: 0vh;
   margin-left: auto;
   margin-right: auto;
-  letter-spacing: 5px; 
+  letter-spacing: 5px;
 }
 .stripe.introduction h2 {
   text-align: center;
@@ -360,23 +362,23 @@ div.overall {
   margin-bottom: 0vh;
   margin-left: auto;
   margin-right: auto;
-  letter-spacing: 2px; 
+  letter-spacing: 2px;
 }
 .stripe.history h2 {
   margin-top: 0px;
-  margin-bottom: 0px; 
+  margin-bottom: 0px;
   text-align: center;
   font-size: 2.25em;
-  color: #ffffff; 
-  font-family: 'Rozha One',serif; 
+  color: #ffffff;
+  font-family: "Rozha One", serif;
 }
 .stripe.features h2 {
   margin-top: 0px;
-  margin-bottom: 4vh; 
+  margin-bottom: 4vh;
   text-align: center;
   font-size: 2.25em;
-  color: #323232; 
-  font-family: 'Rozha One',serif; 
+  color: #323232;
+  font-family: "Rozha One", serif;
 }
 .feature.introduction h1 {
   text-align: center;
@@ -411,9 +413,9 @@ div.overall {
   margin: 0px;
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 16px; 
-  font-weight: 600; 
-  letter-spacing: 1px; 
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 .feature_item button {
   width: 100%;
@@ -428,40 +430,60 @@ div.overall {
   color: #0f1f2a;
 }
 .feature_item.category1 h3 {
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/care.jpg');
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("images/care.jpg");
 }
 .feature_item.category2 h3 {
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/grow.jpg');
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("images/grow.jpg");
 }
 .feature_item.category3 h3 {
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/style.jpg');
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("images/style.jpg");
 }
 .feature_item.category4 h3 {
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/species.jpg');
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("images/species.jpg");
 }
 .feature_item.category5 h3 {
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('images/beginner.jpg');
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("images/beginner.jpg");
 }
 div.content_item {
-  display: block; 
+  display: block;
   background-color: #ffffff;
   margin-top: 10vh;
-  margin-bottom: 10vh; 
+  margin-bottom: 10vh;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
   padding-right: 50px;
   height: auto;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 .content_item h3 {
   text-align: center;
   margin-bottom: 10px;
   color: #323232;
-  font-family: 'Rozha One',serif;
-  font-size: 1.5em; 
-  font-weight: 300; 
-  letter-spacing: 1px; 
+  font-family: "Rozha One", serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 hr {
   height: 2px;
@@ -469,7 +491,7 @@ hr {
   border-width: 0;
   color: #f5f5f5;
   background-color: #f5f5f5;
-  margin: auto; 
+  margin: auto;
 }
 p.content {
   text-align: center;
@@ -483,71 +505,71 @@ button.content_information {
   display: block;
   margin: auto;
   margin-top: 5vh;
-  padding-top: 20px; 
-  padding-bottom: 20px; 
-  background-color: #70CF84;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #70cf84;
   background-repeat: no-repeat;
-  border: 0px; 
-  border-radius: 8px; 
+  border: 0px;
+  border-radius: 8px;
 }
 button.content_information a {
-  text-decoration: none; 
+  text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 1em;  
-  font-weight: 600; 
-  letter-spacing: 1px; 
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
   padding: 50px 20px;
 }
-  /*======================footer========================*/
-  .footer {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    background-color: #000000;
-    display: grid;
-    grid-template-columns: [col1] 1fr [col7];
-    grid-gap: 0px;
-  }
-  div.footer1 {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  div.footer2 {
-    margin-top: 10px;
-    margin-left: 30vw;
-    margin-right: 30vw;
-  }
-  p.footer1 {
-    margin-left: auto;
-    margin-right: auto;
-    color: #ffffff;
-    text-align: right;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 18px;
-  }
-  p.footer2 {
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-  }
-  img.logoend {
-    display: block;
-    width: 50%;
-    margin: auto;
-  }
-  p.logoend {
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-left: auto; 
-    margin-right: auto; 
-    text-align: center; 
-    letter-spacing: 1px;
-    font-size: 18px;
-    color: #ffffff;
-    vertical-align: middle;
-  }
-  /*======================footer========================*/
+/*======================footer========================*/
+.footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: [col1] 1fr [col7];
+  grid-gap: 0px;
+}
+div.footer1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+div.footer2 {
+  margin-top: 10px;
+  margin-left: 30vw;
+  margin-right: 30vw;
+}
+p.footer1 {
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+p.footer2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+}
+img.logoend {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+p.logoend {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #ffffff;
+  vertical-align: middle;
+}
+/*======================footer========================*/
 .content_container {
   grid-column-start: col1;
   grid-column-end: col7;
@@ -556,64 +578,67 @@ button.content_information a {
 .content_container.page_grid {
   display: grid;
   grid-gap: 20px 0px;
-} 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-font-size: 1em;
-font-family: 'Open Sans';
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 1em;
+  font-family: "Open Sans";
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-font-size: 1em;
-font-family: 'Open Sans';
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-size: 1em;
+  font-family: "Open Sans";
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-font-size: 1em;
-font-family: 'Open Sans';
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-size: 1em;
+  font-family: "Open Sans";
 }
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
   from {
-      top: -300px;
-      opacity: 0
+    top: -300px;
+    opacity: 0;
   }
 
   to {
-      top: 0;
-      opacity: 1
+    top: 0;
+    opacity: 1;
   }
 }
 
 @keyframes animatetop {
   from {
-      top: -300px;
-      opacity: 0
+    top: -300px;
+    opacity: 0;
   }
 
   to {
-      top: 0;
-      opacity: 1
+    top: 0;
+    opacity: 1;
   }
 }
 
 #top {
-position: fixed; /* Fixed/sticky position */
-bottom: 20px; /* Place the button at the bottom of the page */
-right: 30px; /* Place the button 30px from the right */
-z-index: 99; /* Make sure it does not overlap */
-border: none; /* Remove borders */
-outline: none; /* Remove outline */
-background-color: #70cf84; /* Set a background color */
-color: white; /* Text color */
-cursor: pointer; /* Add a mouse pointer on hover */
-padding: 15px; /* Some padding */
-border-radius: 5px; /* Rounded corners */
-font-size: 18px; /* Increase font size */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #70cf84; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
 }
 
 #top:hover {
-background-color: #505050; /* Add a dark-grey background on hover */
+  background-color: #505050; /* Add a dark-grey background on hover */
 }
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media only screen and (min-width: 1280px) {
@@ -647,7 +672,9 @@ background-color: #505050; /* Add a dark-grey background on hover */
     text-decoration: none;
     font-size: 17px;
   }
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon1 {
     float: right;
     display: block;
@@ -656,7 +683,9 @@ background-color: #505050; /* Add a dark-grey background on hover */
     float: right;
     display: block;
   }
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon1 {
     position: absolute;
     right: 6.5vw;
@@ -702,7 +731,9 @@ background-color: #505050; /* Add a dark-grey background on hover */
     text-decoration: none;
     font-size: 17px;
   }
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon1 {
     float: right;
     display: block;
@@ -711,7 +742,9 @@ background-color: #505050; /* Add a dark-grey background on hover */
     float: right;
     display: block;
   }
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon1 {
     position: absolute;
     right: 12vw;
@@ -767,7 +800,9 @@ background-color: #505050; /* Add a dark-grey background on hover */
     text-decoration: none;
     font-size: 17px;
   }
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon1 {
     float: right;
     display: block;
@@ -776,7 +811,9 @@ background-color: #505050; /* Add a dark-grey background on hover */
     float: right;
     display: block;
   }
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon1 {
     position: absolute;
     right: 12vw;
