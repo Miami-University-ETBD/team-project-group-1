@@ -463,8 +463,6 @@ header {
     height: 160px;
    }
 
-
-
 nav ul.image_list {
     margin: 0px;
     padding: 5px 0px 5px 30px;
@@ -483,7 +481,7 @@ a {
 
 nav li a:hover, nav li a.current {
     color: #000000;}
-    
+
 #image_list {
 	padding-left: 60px;
 }
@@ -496,7 +494,10 @@ li {
 #image {
     margin-left: 60px;
 }
-
+.image_small {
+  width: 60px;
+  height: 40px;
+}
 @media only screen and (min-width: 1280px) {
   .stripe {
     grid-template-columns: [left] 100px [col1] 1fr [col7] 100px [right];
