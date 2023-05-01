@@ -203,11 +203,6 @@ body {
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
-h1 {
-  text-align: center;
-  margin-top: 0;
-  font-family: 'Lato', sans-serif;
-}
 form {
   display: flex;
   flex-direction: column;
@@ -335,6 +330,9 @@ div.form-container {
       margin-right: 5vw;
     }
     div.form-container {
+      margin-top: 0vh;
+    }
+    h3{
       margin-top: 0vh;
     }
     }
