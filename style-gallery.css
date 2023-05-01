@@ -444,13 +444,6 @@ html {
     }
   }
 
-section.gallery {
-  margin-top: 10vh; 
-  margin-right: auto; 
-  margin-left: auto;
-  text-align: center;
-}
-
 header, aside, nav {
     display: block;}
 
@@ -458,12 +451,20 @@ header, aside, nav {
     width: 940px;
     margin: 20px auto 20px auto;
     border: 2px solid #000000;
-    background-color: #ffffff;}
+    background-color: #ffffff;
+  }
 
-header {
-    height: 160px;
-   }
+  div.fotorama_image {
+    width: 150px;
+    height: 150px;
+  }
 
+    section.gallery {
+      margin-top: 10vh; 
+      margin-right: auto; 
+      margin-left: auto;
+      text-align: center;
+    }
 ul.image_list {
 	padding-left: 0px;
   padding-right: 0px;
