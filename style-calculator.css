@@ -469,5 +469,6 @@ input[type="button"]:hover {
 }
 
 div.form-container {
-  margin: 6em 10em 10em 10em;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
