@@ -473,7 +473,7 @@ li.image_list {
   width: 56vw;
   height: auto;
 }
-.slide show h2 {
+.slideshow h2 {
   font-size: 1.5em;
 }
 @media only screen and (min-width: 1280px) {
@@ -596,6 +596,12 @@ li.image_list {
   }
   .image_small {
     height: 5vh;
+  }
+  .gallery h2 {
+    font-size: 1.25em !important;
+  }
+  .slideshow h2 {
+    font-size: 1.25em !important;
   }
   }
   @media only screen and (max-width: 374px) {
