@@ -449,6 +449,9 @@ html {
       margin-left: auto;
       text-align: center;
     }
+    .gallery h2 {
+      font-size: 1.5em;
+    }
 ul.image_list {
 	padding-left: 0px;
   padding-right: 0px;
@@ -469,6 +472,9 @@ li.image_list {
 .image_large {
   width: 56vw;
   height: auto;
+}
+.slide show h2 {
+  font-size: 1.5em;
 }
 @media only screen and (min-width: 1280px) {
   .stripe {
