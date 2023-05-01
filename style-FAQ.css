@@ -84,8 +84,8 @@ body {
     content: "\2212"; 
     color:white!important;
   }
-  p{
-      margin-left:2.5em;
+  .stripe.fact p {
+    margin-left:2.5em;
       text-align: left;
       font-size: 1.5em;
   }
