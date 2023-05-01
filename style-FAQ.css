@@ -411,4 +411,9 @@ body {
       margin-left: 5vw;
       margin-right: 5vw;
     }
+    button.accordion {
+      padding: 5%;
+      font-size: 1.25em;
+      margin-top: 5vh;
+  }
     }
