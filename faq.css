@@ -1,5 +1,4 @@
 body {
-<<<<<<< HEAD
     background-color: #ffffff;
     font-family: 'Lato', sans-serif;
     margin-block-start: 0 !important;
@@ -60,14 +59,6 @@ body {
     outline: none;
     transition: 0.4s;
     font-size: 1.5em !important;
-=======
-  background-color: #ffffff;
-  font-family: "Lato", sans-serif;
-  margin-block-start: 0 !important;
-  margin-block-end: 0 !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
->>>>>>> b255b1ebf789c2a03da444eb205d106acefba80d
 }
 .stripe.introduction {
   background-image: linear-gradient(
