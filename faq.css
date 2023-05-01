@@ -199,6 +199,7 @@ h3.accordion {
   border: 0px !important;
   display: none;
   overflow: hidden;
+  height: auto !important;
 }
 
 h3.accordion::after {
