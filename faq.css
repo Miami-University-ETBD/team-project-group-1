@@ -46,19 +46,19 @@ body {
   h3.accordion {
     background-color: #70cf84;
     color:  #ffffff;
-    cursor: pointer !important;
-    padding: 2% !important;
+    cursor: pointer;
+    padding: 2%;
     border: 0px;
     border-radius:10px;
     width: 100%;
-    margin-left: 0vw !important;
-    margin-right: 0vw !important;
-    margin-top: 10vh !important;
-    margin-bottom: 0vh !important;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    margin-top: 10vh;
+    margin-bottom: 0vh;
     text-align: left;
     outline: none;
     transition: 0.4s;
-    font-size: 1.5em !important;
+    font-size: 1.5em;
 }
   
   .active, .accordion:hover {
@@ -352,9 +352,9 @@ body {
       margin-right: 5vw;
     }
     button.accordion {
-      padding: 5% !important;
-      font-size: 1.25em !important;
-      margin-top: 5vh !important;
+      padding: 5%;
+      font-size: 1.25em;
+      margin-top: 5vh;
   }
     }
     @media only screen and (max-width: 374px) {
@@ -412,8 +412,8 @@ body {
       margin-right: 5vw;
     }
     button.accordion {
-      padding: 5% !important;
-      font-size: 1.25em !important;
-      margin-top: 5vh !important;
+      padding: 5%;
+      font-size: 1.25em;
+      margin-top: 5vh;
   }
     }
