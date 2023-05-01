@@ -339,8 +339,7 @@ body {
       text-align: left;
     }
     .stripe.introduction {
-      background-size: 300%;
-      height: 100vh;
+      background-size: 175%;
     }
     .stripe.introduction h1 {
       font-size: 2em;
