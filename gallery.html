@@ -18,6 +18,9 @@
   <script src="java.js" defer ></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <meta name="theme-color" content="#fafafa">
+  <!-- Fotorama from CDNJS, 19 KB -->
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
   <script>
     // function swap(evt) {
@@ -107,46 +110,23 @@
 <div class ="slideshow">
   <h2>Even more bonsai photos to inspire you:</h2>
 </div>
-  <div class="slide">
-    <div class="content_container"> 
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="numbertext">1/5</div>
-            <img src="images/1.jpeg" style="width:100%" alt="Bonsai 1">
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2/5</div>
-            <img src="images/2.jpeg" style="width:100%" alt="Bonsai">
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">3/5</div>
-            <img src="images/3.jpeg" style="width:100%" alt="Bonsai">
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">4/5</div>
-            <img src="images/4.jpeg" style="width:100%" alt="Bonsai">
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">5/5</div>
-          <img src="images/5.jpeg" style="width:100%" alt="Bonsai">
-      </div>
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-      </div>
-    </div>
-  </div>
+<div class="fotorama"
+  data-width="100%"
+  data-height="100%"
+  data-nav="thumbs"
+  data-transition="crossfade"
+  data-autoplay="2000"
+  data-navposition="top"
+  data-loop="true"
+  data-click="true"
+  data-swipe="true">
+  <a href="images/1.jpeg"><img src="images/1.jpeg" width="150" height="200"></a>
+  <a href="images/2.jpeg"><img src="images/2.jpeg" width="150" height="200"></a>
+  <a href="images/3.jpeg"><img src="images/3.jpeg" width="150" height="200"></a>
+  <a href="images/4.jpeg"><img src="images/4.jpeg" width="150" height="200"></a>
+  <a href="images/5.jpeg"><img src="images/5.jpeg" width="150" height="200"></a>
+
+</div> 
 
 <!-- top button -->
 <button onclick="topFunction()" id="top" title="Go to top">Top</button>
