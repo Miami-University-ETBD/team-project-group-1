@@ -597,6 +597,9 @@ li.image_list {
   .image_small {
     height: 5vh;
   }
+  section.gallery {
+    margin-top: 0vh; 
+  }
   .gallery h2 {
     font-size: 1.25em !important;
   }
@@ -660,5 +663,14 @@ li.image_list {
   }
   .image_small {
     height: 5vh;
+  }
+  section.gallery {
+    margin-top: 0vh; 
+  }
+  .gallery h2 {
+    font-size: 1.25em !important;
+  }
+  .slideshow h2 {
+    font-size: 1.25em !important;
   }
   }
