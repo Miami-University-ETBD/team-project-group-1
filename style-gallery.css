@@ -535,6 +535,9 @@ li.image_list {
     margin-left: 5vw;
     margin-right: 5vw;
   }
+  .image_small {
+    height: 5vh;
+  }
   }
   @media (min-width: 375px) and (max-width: 767px) {
   .menubar ul {
