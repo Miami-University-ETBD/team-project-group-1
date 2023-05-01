@@ -53,7 +53,7 @@ body {
     width: 100%;
     margin-left: 0vw;
     margin-right: 0vw;
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-bottom: 0vh;
     text-align: left;
     outline: none;
@@ -67,7 +67,7 @@ body {
 }
 
 .panel {
-  padding: 30px 0px;
+  padding: 2vh 2vw;
   background-color: #fff;
   display: none;
   overflow: hidden;
