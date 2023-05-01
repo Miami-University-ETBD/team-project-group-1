@@ -443,7 +443,7 @@ html {
       page-break-after: avoid;
     }
   }
-  
+
 section.gallery {
   margin-top: 10vh; 
   margin-right:auto; 
@@ -483,10 +483,7 @@ a {
 
 nav li a:hover, nav li a.current {
     color: #000000;}
-
-#gallery {
-    width: 659px;}
-
+    
 #image_list {
 	padding-left: 60px;
 }
