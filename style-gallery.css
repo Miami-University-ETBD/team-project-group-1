@@ -466,8 +466,8 @@ header {
 ul.image_list {
 	padding-left: 0px;
   padding-right: 0px;
-  margin-left: auto;
-  margin-right: auto; 
+  margin-block-start: auto;
+  margin-block-end: auto; 
   margin-top: auto;
   margin-bottom: auto;
 }
