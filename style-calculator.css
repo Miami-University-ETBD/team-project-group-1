@@ -396,6 +396,8 @@ div.form-container {
     }
     h3{
       margin-top: 0vh;
+      margin-left: 0vw;
+      margin-right: 0vw;
     }
     }
     @media only screen and (max-width: 374px) {
