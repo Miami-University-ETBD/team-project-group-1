@@ -427,6 +427,9 @@ p.logoend {
     margin-left: 5vw;
     margin-right: 5vw;
   }
+  .stripe.fact p {
+    font-size: 1em;
+  }
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .menubar ul {
