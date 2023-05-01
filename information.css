@@ -1,661 +1,684 @@
 /* general styles */
 body {
-    font-family: 'Lato', sans-serif;
-    background-color: #f2f2f2;
-	margin: 0px;
+  font-family: "Lato", sans-serif;
+  background-color: #f2f2f2;
+  margin: 0px;
 }
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-    
+
 /*======================menubar========================*/
 .menubar {
-	background-color: #ffffff;
-	padding: 10px 0px;
-	position: fixed;
-	width: 100vw;
-	top: 0;
-	overflow: hidden;
-	z-index: 9999;
-	box-shadow: 0px 12px 24px rgb(0 0 0 / 10%);
-  }
-  .menubar ul {
-	list-style-type: none;
-	padding: 0;
-	margin-block-start: 0 !important;
-	margin-block-end: 0 !important;
-	display: flex;
-	justify-content: space-around;
-  }
-  .menubar ul li {
-	display: flex;
-	vertical-align: middle;
-	align-items: center;
-  }
-  .menubar a {
-	text-decoration: none;
-	letter-spacing: 1px;
-	font-size: 1em;
-	font-weight: 600;
-	padding: 10px;
-	color: #505050 !important;
-	vertical-align: middle;
-  }
-  .menubar a:hover {
-	background-color: grey;
-  }
-  img.logo {
-	width: 50px;
-	height: fit-content;
-  
-  }
-  a.logo {
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: 18px;
-	padding: 10px;
-	color: #ffffff;
-	vertical-align: middle;
-  }
+  background-color: #ffffff;
+  padding: 10px 0px;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  overflow: hidden;
+  z-index: 9999;
+  box-shadow: 0px 12px 24px rgb(0 0 0 / 10%);
+}
+.menubar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  display: flex;
+  justify-content: space-around;
+}
+.menubar ul li {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+}
+.menubar a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 10px;
+  color: #505050 !important;
+  vertical-align: middle;
+}
+.menubar a:hover {
+  background-color: grey;
+}
+img.logo {
+  width: 50px;
+  height: fit-content;
+}
+a.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 10px;
+  color: #ffffff;
+  vertical-align: middle;
+}
 
-  .content_container input[type=text] {
-	float: right;
-	padding: 6px;
-	margin-top: 0px;
-	margin-right: 0px;
-	border-bottom: 1px solid #505050;
-	border-top: 0px;
-	border-right: 0px;
-	border-left: 0px; 
-	font-size: 17px;
-  }
-  ::placeholder {
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 16px;
-  }
-  .topnav {
-	display: none;
-  }
-  /*======================menubar========================*/
-  /* copy all of these to your css file to make sure our menubar look similar*/
-  
-  p.intro_text {
-	text-align: center;
-	margin-top: 5vh;
-	margin-bottom: 0px;
-	margin-left: 10vw;
-	margin-right: 10vw;
-	padding: 0px;
-	font-size: 16px;
-  }
-  p.overall {
-	margin-top: 0vh;
-	margin-bottom: 0vh;
-	padding-top: 20px;
-	font-size: 1.125em;
-	color: #ffffff;
-  }
-  p.overallblockquote {
-	margin-top: 10px;
-	margin-bottom: 0vh;
-	padding-top: 20px;
-	font-size: 1.125em;
-	text-align: center;
-	font-style: italic;
-	color: #ffffff;
-  }
-  .stripe {
-    display: grid;
-    grid-template-columns: [left] 20px [col1] 1fr [col7] 20px [right];
-  }
+.content_container input[type="text"] {
+  float: right;
+  padding: 6px;
+  margin-top: 0px;
+  margin-right: 0px;
+  border-bottom: 1px solid #505050;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  font-size: 17px;
+}
+::placeholder {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.topnav {
+  display: none;
+}
+/*======================menubar========================*/
+/* copy all of these to your css file to make sure our menubar look similar*/
 
-  .stripe.introduction {
-    background-image: linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)), url('images/intro.jpg');
-    background-size: 100%;
-    height: 80vh;
-    background-repeat: no-repeat;
-    padding: 0px;
-  }
+p.intro_text {
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 0px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding: 0px;
+  font-size: 16px;
+}
+p.overall {
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  padding-top: 20px;
+  font-size: 1.125em;
+  color: #ffffff;
+}
+p.overallblockquote {
+  margin-top: 10px;
+  margin-bottom: 0vh;
+  padding-top: 20px;
+  font-size: 1.125em;
+  text-align: center;
+  font-style: italic;
+  color: #ffffff;
+}
+.stripe {
+  display: grid;
+  grid-template-columns: [left] 20px [col1] 1fr [col7] 20px [right];
+}
 
-  .stripe.introduction h1 {
-    font-family: 'Rozha One',serif;
-    text-align: center;
-    font-size: 4.5em;
-    font-weight: 100;
-    color: #323232;
-    margin-top: 25vh;
-    margin-bottom: 0vh;
-    margin-left: auto;
-    margin-right: auto;
-    letter-spacing: 5px; 
-  }
+.stripe.introduction {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.65)
+    ),
+    url("images/intro.jpg");
+  background-size: 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  padding: 0px;
+}
 
-  .stripe.introduction h2 {
-    text-align: center;
-    font-size: 20px;
-    color: #0f1f2a;
-    margin-top: 1vh;
-    margin-bottom: 0vh;
-    margin-left: auto;
-    margin-right: auto;
-    letter-spacing: 2px; 
-  }
+.stripe.introduction h1 {
+  font-family: "Rozha One", serif;
+  text-align: center;
+  font-size: 4.5em;
+  font-weight: 100;
+  color: #323232;
+  margin-top: 25vh;
+  margin-bottom: 0vh;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 5px;
+}
 
-  .slide {
-	margin-top: 10vh;
-	margin-bottom: 100px;
-  }
+.stripe.introduction h2 {
+  text-align: center;
+  font-size: 20px;
+  color: #0f1f2a;
+  margin-top: 1vh;
+  margin-bottom: 0vh;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 2px;
+}
 
-  .stripe.info {
-	margin-top: 10vh;
-	margin-bottom: 100px;
-  }
+.slide {
+  margin-top: 10vh;
+  margin-bottom: 100px;
+}
 
-  .resource {
-	text-align: center;
-	margin-top: 5vh;
-  	margin-bottom: 100px;
-  	margin-left: 10vw;
-  	margin-right: 10vw;
-  	padding: 0px;
-  	font-size: 16px;
-  }
+.stripe.info {
+  margin-top: 10vh;
+  margin-bottom: 100px;
+}
 
-
+.resource {
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 100px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding: 0px;
+  font-size: 16px;
+}
 
 /* Slideshow container */
 .slideshow-container {
-	max-width: 1000px;
-	position: relative;
-	margin: auto;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f5f5f5;
+  font: 18px "Lato", sans-serif;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
   }
-  
-  /* Hide the images by default */
-  .mySlides {
-	display: none;
+  to {
+    opacity: 1;
   }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -22px;
-	padding: 16px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
   }
-  
-  /* Position the "next button" to the right */
-  .next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
+  to {
+    opacity: 1;
   }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-	color: #f5f5f5;
-	font: 18px 'Lato', sans-serif;
-	padding: 8px 12px;
-	position: absolute;
-	bottom: 8px;
-	text-align: center;
-	background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-	color: black;
-	font-size: 12px;
-	padding: 8px 12px;
-	position: absolute;
-	top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-	cursor: pointer;
-	height: 8px;
-	width: 8px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-	background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-	from {opacity: .4}
-	to {opacity: 1}
-  }
-  
-  @keyframes fade {
-	from {opacity: .4}
-	to {opacity: 1}
-  }
+}
 /* button */
 .button {
-	display: inline-block;
-	width: 250px;
-	padding: 10px 20px;
-	background-color: #4CAF50;
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-	border: none;
-	border-radius: 8px;
-  }
-  
-  .button:hover {
-	background-color: #3e8e41;
-  }
-  /*======================footer========================*/
-  div.footer1 {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  div.footer2 {
-    margin-top: 10px;
-    margin-left: 30vw;
-    margin-right: 30vw;
-  }
-  p.footer1 {
-    margin-left: auto;
-    margin-right: auto;
-    color: #ffffff;
-    text-align: right;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 18px;
-  }
-  p.footer2 {
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-  }
-  img.logoend {
-    display: block;
-    width: 50%;
-    margin: auto;
-  }
-  p.logoend {
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-left: auto; 
-    margin-right: auto; 
-    text-align: center; 
-    letter-spacing: 1px;
-    font-size: 18px;
-    color: #ffffff;
-    vertical-align: middle;
-  }
-  /*======================footer========================*/
-  .footer {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    background-color: #000000;
-    display: grid;
-    grid-template-columns: [col1] 1fr [col7];
-    grid-gap: 0px;
-  }
-  .content_container {
-	grid-column-start: col1;
-	grid-column-end: col7;
-  }
-  /* copy all of these page_grid too!*/
-  .content_container.page_grid {
-	display: grid;
-	grid-gap: 20px 0px;
-  } 
-  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  font-size: 1em;
-  font-family: 'Open Sans';
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  font-size: 1em;
-  font-family: 'Open Sans';
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-  font-size: 1em;
-  font-family: 'Open Sans';
-  }
-  
-  /* Add Animation */
-  @-webkit-keyframes animatetop {
-	from {
-		top: -300px;
-		opacity: 0
-	}
-  
-	to {
-		top: 0;
-		opacity: 1
-	}
-  }
-  
-@keyframes animatetop {
-	from {
-		top: -300px;
-		opacity: 0
-	}
-	to {
-		top: 0;
-		opacity: 1
-	}
+  display: inline-block;
+  width: 250px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
 }
-  
+
+.button:hover {
+  background-color: #3e8e41;
+}
+/*======================footer========================*/
+div.footer1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+div.footer2 {
+  margin-top: 10px;
+  margin-left: 30vw;
+  margin-right: 30vw;
+}
+p.footer1 {
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+p.footer2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+}
+img.logoend {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+p.logoend {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #ffffff;
+  vertical-align: middle;
+}
+/*======================footer========================*/
+.footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: [col1] 1fr [col7];
+  grid-gap: 0px;
+}
+.content_container {
+  grid-column-start: col1;
+  grid-column-end: col7;
+}
+/* copy all of these page_grid too!*/
+.content_container.page_grid {
+  display: grid;
+  grid-gap: 20px 0px;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 1em;
+  font-family: "Open Sans";
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-size: 1em;
+  font-family: "Open Sans";
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-size: 1em;
+  font-family: "Open Sans";
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 #top {
-	position: fixed; /* Fixed/sticky position */
-	bottom: 20px; /* Place the button at the bottom of the page */
-	right: 30px; /* Place the button 30px from the right */
-	z-index: 99; /* Make sure it does not overlap */
-	border: none; /* Remove borders */
-	outline: none; /* Remove outline */
-	background-color: #70cf84; /* Set a background color */
-	color: white; /* Text color */
-	cursor: pointer; /* Add a mouse pointer on hover */
-	padding: 15px; /* Some padding */
-	border-radius: 5px; /* Rounded corners */
-	font-size: 18px; /* Increase font size */
-	}
-	
-	#top:hover {
-	background-color: #505050; /* Add a dark-grey background on hover */
-	}
-  /* Responsive layout - makes a one column-layout instead of a two-column layout */
-  @media only screen and (min-width: 1280px) {
-	.stripe {
-	  grid-template-columns: [left] 100px [col1] 1fr [col7] 100px [right];
-	}
-	.content_container.page_grid.features {
-	  display: grid;
-	  grid-template-columns: [col1] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [col7];
-	  grid-gap: 40px;
-	}
-	.content_container.page_grid.contents {
-	  display: grid;
-	  grid-template-columns: [col1] 1fr [col3] 1fr [col5] 1fr [col7];
-	  grid-gap: 40px;
-	}
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #70cf84; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#top:hover {
+  background-color: #505050; /* Add a dark-grey background on hover */
+}
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media only screen and (min-width: 1280px) {
+  .stripe {
+    grid-template-columns: [left] 100px [col1] 1fr [col7] 100px [right];
   }
-  @media (min-width: 768px) and (max-width: 1279px) {
-	.menubar ul {
-	  display: none;
-	}
-	.topnav {
-	  display: block;
-	}
-	.topnav a {
-	  float: left;
-	  display: block;
-	  color: #505050;
-	  text-align: center;
-	  padding: 14px 16px;
-	  text-decoration: none;
-	  font-size: 17px;
-	}
-	.topnav a:not(:first-child) {display: none;}
-	.topnav a.icon1 {
-	  float: right;
-	  display: block;
-	}
-	.topnav a.icon2 {
-	  float: right;
-	  display: block;
-	}
-	.topnav.responsive {position: relative;}
-	.topnav.responsive .icon1 {
-	  position: absolute;
-	  right: 6.5vw;
-	  top: 0;
-	}
-	.topnav.responsive .icon2 {
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-	}
-	.topnav.responsive a {
-	  float: none;
-	  display: block;
-	  text-align: left;
-	}
-	.stripe.introduction {
-	  background-size: 120%;
-	}
-	.stripe.introduction h1 {
-	  font-size: 3.5em;
-	}
-	.stripe.introduction h2 {
-	  font-size: 18px;
-	  margin-top: 5vh;
-	  margin-left: 5vw;
-	  margin-right: 5vw;
-	}
+  .content_container.page_grid.features {
+    display: grid;
+    grid-template-columns: [col1] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6] 1fr [col7];
+    grid-gap: 40px;
   }
-  @media (min-width: 375px) and (max-width: 767px) {
-	.menubar ul {
-	  display: none;
-	}
-	.topnav {
-	  display: block;
-	}
-	.topnav a {
-	  float: left;
-	  display: block;
-	  color: #505050;
-	  text-align: center;
-	  padding: 14px 16px;
-	  text-decoration: none;
-	  font-size: 17px;
-	}
-	.topnav a:not(:first-child) {display: none;}
-	.topnav a.icon1 {
-	  float: right;
-	  display: block;
-	}
-	.topnav a.icon2 {
-	  float: right;
-	  display: block;
-	}
-	.topnav.responsive {position: relative;}
-	.topnav.responsive .icon1 {
-	  position: absolute;
-	  right: 12vw;
-	  top: 0;
-	}
-	.topnav.responsive .icon2 {
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-	}
-	.topnav.responsive a {
-	  float: none;
-	  display: block;
-	  text-align: left;
-	}
-	.stripe.introduction {
-	  background-size: 250%;
-	}
-	.stripe.introduction h1 {
-	  font-size: 2em;
-	  margin-top: 20vh;
-	}
-	.stripe.introduction h2 {
-	  font-size: 16px;
-	  margin-top: 5vh;
-	  margin-left: 5vw;
-	  margin-right: 5vw;
-	}
+  .content_container.page_grid.contents {
+    display: grid;
+    grid-template-columns: [col1] 1fr [col3] 1fr [col5] 1fr [col7];
+    grid-gap: 40px;
   }
-  @media only screen and (max-width: 374px) {
-	.menubar ul {
-	  display: none;
-	}
-	.topnav {
-	  display: block;
-	}
-	.topnav a {
-	  float: left;
-	  display: block;
-	  color: #505050;
-	  text-align: center;
-	  padding: 14px 16px;
-	  text-decoration: none;
-	  font-size: 17px;
-	}
-	.topnav a:not(:first-child) {display: none;}
-	.topnav a.icon1 {
-	  float: right;
-	  display: block;
-	}
-	.topnav a.icon2 {
-	  float: right;
-	  display: block;
-	}
-	.topnav.responsive {position: relative;}
-	.topnav.responsive .icon1 {
-	  position: absolute;
-	  right: 12vw;
-	  top: 0;
-	}
-	.topnav.responsive .icon2 {
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-	}
-	.topnav.responsive a {
-	  float: none;
-	  display: block;
-	  text-align: left;
-	}
-	.stripe.introduction {
-	  background-size: 250%;
-	}
-	.stripe.introduction h1 {
-	  font-size: 2em;
-	  margin-top: 20vh;
-	}
-	.stripe.introduction h2 {
-	  font-size: 16px;
-	  margin-top: 5vh;
-	  margin-left: 5vw;
-	  margin-right: 5vw;
-	}
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .menubar ul {
+    display: none;
   }
-  @media print,
-	(-webkit-min-device-pixel-ratio: 1.25),
-	(min-resolution: 1.25dppx),
-	(min-resolution: 120dpi) {
-	/* Style adjustments for high resolution devices */
+  .topnav {
+    display: block;
   }
-  
-  /* ==========================================================================
+  .topnav a {
+    float: left;
+    display: block;
+    color: #505050;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon1 {
+    float: right;
+    display: block;
+  }
+  .topnav a.icon2 {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon1 {
+    position: absolute;
+    right: 6.5vw;
+    top: 0;
+  }
+  .topnav.responsive .icon2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .stripe.introduction {
+    background-size: 120%;
+  }
+  .stripe.introduction h1 {
+    font-size: 3.5em;
+  }
+  .stripe.introduction h2 {
+    font-size: 18px;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .menubar ul {
+    display: none;
+  }
+  .topnav {
+    display: block;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #505050;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon1 {
+    float: right;
+    display: block;
+  }
+  .topnav a.icon2 {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon1 {
+    position: absolute;
+    right: 12vw;
+    top: 0;
+  }
+  .topnav.responsive .icon2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .stripe.introduction {
+    background-size: 250%;
+  }
+  .stripe.introduction h1 {
+    font-size: 2em;
+    margin-top: 20vh;
+  }
+  .stripe.introduction h2 {
+    font-size: 16px;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .menubar ul {
+    display: none;
+  }
+  .topnav {
+    display: block;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #505050;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon1 {
+    float: right;
+    display: block;
+  }
+  .topnav a.icon2 {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon1 {
+    position: absolute;
+    right: 12vw;
+    top: 0;
+  }
+  .topnav.responsive .icon2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .stripe.introduction {
+    background-size: 250%;
+  }
+  .stripe.introduction h1 {
+    font-size: 2em;
+    margin-top: 20vh;
+  }
+  .stripe.introduction h2 {
+    font-size: 16px;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+}
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
 	 Print styles.
 	 Inlined to avoid the additional HTTP request:
 	 https://www.phpied.com/delay-loading-your-print-css/
 	 ========================================================================== */
-  
-  @media print {
-	*,
-	*::before,
-	*::after {
-	  background: #fff !important;
-	  color: #000 !important;
-	  /* Black prints faster */
-	  box-shadow: none !important;
-	  text-shadow: none !important;
-	}
-  
-	a,
-	a:visited {
-	  text-decoration: underline;
-	}
-  
-	a[href]::after {
-	  content: " (" attr(href) ")";
-	}
-  
-	abbr[title]::after {
-	  content: " (" attr(title) ")";
-	}
-  
-	/*
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
 	 * Don't show links that are fragment identifiers,
 	 * or use the `javascript:` pseudo protocol
 	 */
-	a[href^="#"]::after,
-	a[href^="javascript:"]::after {
-	  content: "";
-	}
-  
-	pre {
-	  white-space: pre-wrap !important;
-	}
-  
-	pre,
-	blockquote {
-	  border: 1px solid #999;
-	  page-break-inside: avoid;
-	}
-  
-	/*
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
 	 * Printing Tables:
 	 * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
 	 */
-	thead {
-	  display: table-header-group;
-	}
-  
-	tr,
-	img {
-	  page-break-inside: avoid;
-	}
-  
-	p,
-	h2,
-	h3 {
-	  orphans: 3;
-	  widows: 3;
-	}
-  
-	h2,
-	h3 {
-	  page-break-after: avoid;
-	}
+  thead {
+    display: table-header-group;
   }
-  
 
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-  
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
