@@ -231,6 +231,76 @@ html {
     margin-right: auto;
     letter-spacing: 2px; 
   }
+/*======================Form========================*/
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+h1 {
+  text-align: center;
+  margin-top: 0;
+  font-family: 'Lato', sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+input[type="text1"], input[type="email"], textarea {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  resize: none;
+  min-height: 40px;
+  font-family: 'Lato', sans-serif;
+}
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  margin-top: 15px;
+}
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+.required:after {
+  content: " *";
+  color: #f00;
+}
+.error {
+  color: #f00;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.success {
+  color: #4CAF50;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+div.form-container {
+  margin: 6em 10em 10em 10em;
+}
+
 
 /*======================footer========================*/
     div.footer1 {
@@ -272,7 +342,14 @@ html {
       color: #ffffff;
       vertical-align: middle;
     }
-
+    .footer {
+      padding-top: 40px;
+      padding-bottom: 20px;
+      background-color: #000000;
+      display: grid;
+      grid-template-columns: [col1] 1fr [col7];
+      grid-gap: 0px;
+    }
 /*======================footer========================*/
   .content_container {
     grid-column-start: col1;
@@ -342,7 +419,7 @@ html {
   }
 
   /* Responsive layout - makes a one column-layout instead of a two-column layout */
-  @media only screen and (min-width: 880px) {
+  @media only screen and (min-width: 1280px) {
     .stripe {
       grid-template-columns: [left] 100px [col1] 1fr [col7] 100px [right];
     }
@@ -351,47 +428,169 @@ html {
       grid-template-columns: [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6];
       grid-gap: 40px;
     }
-    .footer {
-      padding-top: 40px;
-      padding-bottom: 20px;
-      background-color: #000000;
-      display: grid;
-      grid-template-columns: [col1] 1fr [col7];
-      grid-gap: 0px;
-    }
-    .flex-container {
-      display: flex;
-      flex-direction: row;
-    }
-    
-    .flex-item-left {
-      padding: 0px;
-      flex: 50%;
-      margin-left: 5vw;
-    }
-    
-    .flex-item-right {
-      padding: 0px;
-      flex: 50%;
-      margin-right: 5vw;
-    }
   }
-  @media (max-width: 800px) {
-    .flex-item-right, .flex-item-left {
-      flex-direction: column;
-      margin: 0px;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    .menubar ul {
+      display: none;
     }
-    .content_container input[type=text] {
+    .topnav {
+      display: block;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #505050;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon1 {
+      float: right;
+      display: block;
+    }
+    .topnav a.icon2 {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon1 {
+      position: absolute;
+      right: 6.5vw;
+      top: 0;
+    }
+    .topnav.responsive .icon2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
       float: none;
       display: block;
       text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
     }
-    
-    .content_container input[type=text] {
-      border: 1px solid #ccc;  
+    .stripe.introduction {
+      background-size: 100%;
+    }
+    .stripe.introduction h1 {
+      font-size: 3.5em;
+    }
+    .stripe.introduction h2 {
+      font-size: 18px;
+      margin-top: 5vh;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+  }
+  @media (min-width: 375px) and (max-width: 767px) {
+    .menubar ul {
+      display: none;
+    }
+    .topnav {
+      display: block;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #505050;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon1 {
+      float: right;
+      display: block;
+    }
+    .topnav a.icon2 {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon1 {
+      position: absolute;
+      right: 12vw;
+      top: 0;
+    }
+    .topnav.responsive .icon2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .stripe.introduction {
+      background-size: 175%;
+    }
+    .stripe.introduction h1 {
+      font-size: 2em;
+      margin-top: 20vh;
+    }
+    .stripe.introduction h2 {
+      font-size: 16px;
+      margin-top: 5vh;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+  }
+  @media only screen and (max-width: 374px) {
+    .menubar ul {
+      display: none;
+    }
+    .topnav {
+      display: block;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #505050;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon1 {
+      float: right;
+      display: block;
+    }
+    .topnav a.icon2 {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon1 {
+      position: absolute;
+      right: 12vw;
+      top: 0;
+    }
+    .topnav.responsive .icon2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .stripe.introduction {
+      background-size: 300%;
+    }
+    .stripe.introduction h1 {
+      font-size: 2em;
+      margin-top: 20vh;
+    }
+    .stripe.introduction h2 {
+      font-size: 16px;
+      margin-top: 5vh;
+      margin-left: 5vw;
+      margin-right: 5vw;
     }
   }
   @media print,
@@ -475,74 +674,3 @@ html {
       page-break-after: avoid;
     }
   }
-
-/*======================Form========================*/
-.container {
-    background-color: #ffffff;
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    margin-top: 50px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-}
-h1 {
-    text-align: center;
-    margin-top: 0;
-    font-family: 'Lato', sans-serif;
-}
-form {
-    display: flex;
-    flex-direction: column;
-}
-label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-input[type="text1"], input[type="email"], textarea {
-    border: none;
-    border-radius: 3px;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    background-color: #f7f7f7;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-    resize: none;
-    min-height: 40px;
-    font-family: 'Lato', sans-serif;
-}
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    padding: 15px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-    margin-top: 15px;
-}
-input[type="submit"]:hover {
-    background-color: #3e8e41;
-}
-.required:after {
-    content: " *";
-    color: #f00;
-}
-.error {
-    color: #f00;
-    font-size: 14px;
-    margin-top: 5px;
-}
-.success {
-    color: #4CAF50;
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-div.form-container {
-    margin: 6em 10em 10em 10em;
-}
-
