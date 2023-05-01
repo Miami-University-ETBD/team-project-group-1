@@ -1,0 +1,419 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .stripe.introduction {
+    background-image: linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.65)), url('images/intro.jpg');
+    background-size: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    padding: 0px;
+  }
+  .stripe.introduction h1 {
+    font-family: 'Rozha One',serif;
+    text-align: center;
+    font-size: 4.5em;
+    font-weight: 100;
+    color: #323232;
+    margin-top: 25vh;
+    margin-bottom: 0vh;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 5px; 
+  }
+
+  .stripe.introduction h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #0f1f2a;
+    margin-top: 1vh;
+    margin-bottom: 0vh;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px; 
+  }
+  .topnav {
+    display: none;
+    }
+  section.button-containter {
+    margin-top: 0vh;
+    margin-bottom: 20vh; 
+  }
+  h3.accordion {
+    background-color: #70cf84;
+    color:  #ffffff;
+    cursor: pointer;
+    padding: 2%;
+    border: 0px;
+    border-radius:10px;
+    width: 100%;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    margin-top: 10vh;
+    margin-bottom: 0vh;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.5em;
+}
+  
+  .active, .accordion:hover {
+    background-color:#505050;
+    color:white;
+}
+
+.panel {
+  padding: 2vh 2vw;
+  background-color: #fff;
+  display: none;
+  overflow: hidden;
+}
+
+  h3.accordion::after {
+    content: "\002B"; 
+    font-size: 1.5em;
+    float: right;
+    margin-left: 8px;
+  }
+  
+  h3.accordion.active::after {
+    content: "\2212"; 
+    color:white!important;
+  }
+  .stripe.fact p {
+    margin-left: 0vw;
+      text-align: left;
+      font-size: 1.5em;
+  }
+
+.stripe {
+    display: grid;
+    grid-template-columns: [left] 20px [col1] 1fr [col7] 20px [right];
+  }
+  .content_container {
+    grid-column-start: col1;
+    grid-column-end: col7;
+  }
+  /*======================menubar========================*/
+.menubar {
+    background-color: #ffffff;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+    box-shadow: 0px 12px 24px rgb(0 0 0 / 10%);
+  }
+  .menubar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menubar ul li {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+  }
+  .menubar a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 10px;
+    color: #505050 !important;
+    vertical-align: middle;
+  }
+  .menubar a:hover {
+    background-color: grey;
+  }
+  img.logo {
+    width: 50px;
+    height: fit-content;
+  
+  }
+  a.logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 10px;
+    color: #ffffff;
+    vertical-align: middle;
+  }
+  .content_container input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 0px;
+    margin-right: 0px;
+    border-bottom: 1px solid #505050;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px; 
+    font-size: 17px;
+  }
+  ::placeholder {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  /*======================menubar========================*/
+  /*======================footer========================*/
+  div.footer1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.footer2 {
+    margin-top: 10px;
+    margin-left: 30vw;
+    margin-right: 30vw;
+  }
+  p.footer1 {
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+  p.footer2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+  }
+  img.logoend {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+  p.logoend {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #ffffff;
+    vertical-align: middle;
+  }
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: [col1] 1fr [col7];
+    grid-gap: 0px;
+  }
+  /*======================footer========================*/
+  #top {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #70cf84; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    }
+    
+    #top:hover {
+    background-color: #505050; /* Add a dark-grey background on hover */
+    }
+
+  @media only screen and (min-width: 1280px) {
+    .stripe {
+      grid-template-columns: [left] 100px [col1] 1fr [col7] 100px [right];
+    }
+    .content_container.page_grid {
+      display: grid;
+      grid-template-columns: [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr [col6];
+      grid-gap: 40px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    .menubar ul {
+      display: none;
+    }
+    .topnav {
+      display: block;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #505050;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon1 {
+      float: right;
+      display: block;
+    }
+    .topnav a.icon2 {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon1 {
+      position: absolute;
+      right: 6.5vw;
+      top: 0;
+    }
+    .topnav.responsive .icon2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .stripe.introduction {
+      background-size: 100%;
+    }
+    .stripe.introduction h1 {
+      font-size: 3.5em;
+    }
+    .stripe.introduction h2 {
+      font-size: 18px;
+      margin-top: 5vh;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+    }
+    @media (min-width: 375px) and (max-width: 767px) {
+    .menubar ul {
+      display: none;
+    }
+    .topnav {
+      display: block;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #505050;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon1 {
+      float: right;
+      display: block;
+    }
+    .topnav a.icon2 {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon1 {
+      position: absolute;
+      right: 12vw;
+      top: 0;
+    }
+    .topnav.responsive .icon2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .stripe.introduction {
+      background-size: 175%;
+    }
+    .stripe.introduction h1 {
+      font-size: 2em;
+      margin-top: 20vh;
+    }
+    .stripe.introduction h2 {
+      font-size: 16px;
+      margin-top: 5vh;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+    button.accordion {
+      padding: 5%;
+      font-size: 1.25em;
+      margin-top: 5vh;
+  }
+    }
+    @media only screen and (max-width: 374px) {
+    .menubar ul {
+      display: none;
+    }
+    .topnav {
+      display: block;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #505050;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon1 {
+      float: right;
+      display: block;
+    }
+    .topnav a.icon2 {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon1 {
+      position: absolute;
+      right: 12vw;
+      top: 0;
+    }
+    .topnav.responsive .icon2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .stripe.introduction {
+      background-size: 300%;
+    }
+    .stripe.introduction h1 {
+      font-size: 2em;
+      margin-top: 20vh;
+    }
+    .stripe.introduction h2 {
+      font-size: 16px;
+      margin-top: 5vh;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+    button.accordion {
+      padding: 5%;
+      font-size: 1.25em;
+      margin-top: 5vh;
+  }
+    }
