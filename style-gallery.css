@@ -453,10 +453,6 @@ section.gallery {
 header, aside, nav {
     display: block;}
 
-header {
-    height: 160px;
-   }
-
 nav ul.image_list {
     margin: 0px;
     padding: 5px 0px 5px 30px;
