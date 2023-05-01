@@ -47,7 +47,7 @@ body {
     background-color: #70cf84;
     color:  #ffffff;
     cursor: pointer;
-    padding: 18px;
+    padding: 2%;
     border: 0px;
     border-radius:10px;
     width: 100%;
@@ -351,6 +351,10 @@ body {
       margin-left: 5vw;
       margin-right: 5vw;
     }
+    button.accordion {
+      padding: 2%;
+      font-size: 1.25em;
+  }
     }
     @media only screen and (max-width: 374px) {
     .menubar ul {
