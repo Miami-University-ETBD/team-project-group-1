@@ -443,12 +443,7 @@ html {
       page-break-after: avoid;
     }
   }
-
-h1 {
-    text-align: center;
-    margin-top: 0;
-    font-family: 'Lato', sans-serif;
-}
+  
 section.gallery {
   margin-top: 10vh; 
   margin-right:auto; 
