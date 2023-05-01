@@ -235,14 +235,10 @@ html {
     letter-spacing: 2px; 
   }
 
-  .slideshow h2 {
-    text-align: center;
-  }
-
   .fotorama {
-    margin-left: 400px;
-    margin-right: 400px;
-    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
   }
 /*======================footer========================*/
     div.footer1 {
