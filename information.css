@@ -607,6 +607,7 @@ p.logoend {
     margin-left: 5vw;
     margin-right: 5vw;
   }
+
   .text {
     font: 12px "Lato", sans-serif;
   }
@@ -682,6 +683,7 @@ p.logoend {
     margin-left: 5vw;
     margin-right: 5vw;
   }
+
   .text {
     font: 12px "Lato", sans-serif;
   }
@@ -761,8 +763,7 @@ p.logoend {
   h2,
   h3 {
     orphans: 3;
-    widows: 3;
-  }
+    widows: 3; }
 
   h2,
   h3 {
